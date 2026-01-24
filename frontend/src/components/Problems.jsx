@@ -1,6 +1,6 @@
 import React from 'react';
 import { AlertCircle } from 'lucide-react';
-import { problems } from '../data/mock';
+import { problems, problemsContent } from '../data/mock';
 
 const Problems = () => {
   return (
@@ -8,13 +8,16 @@ const Problems = () => {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="max-w-2xl mb-16">
           <p className="text-[#E3B341] font-medium text-sm tracking-wide uppercase mb-4">
-            The Problem
+            {problemsContent.label}
           </p>
           <h2 className="text-3xl lg:text-4xl font-semibold text-white/92 leading-tight">
-            Sound familiar?
+            {problemsContent.headline}
           </h2>
           <p className="mt-4 text-lg text-white/68">
-            Most growing businesses face these challenges. The good news? They're all solvable.
+            {problemsContent.intro}
+          </p>
+          <p className="mt-3 text-base text-white/50">
+            {problemsContent.subtext}
           </p>
         </div>
 

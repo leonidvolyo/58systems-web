@@ -1,4 +1,4 @@
-// Mock data for 58 Systems website V2
+// Mock data for 58 Systems website V2 - SMB Conversion Optimized
 
 export const navigationLinks = [
   { label: 'Solutions', href: '#solutions' },
@@ -15,9 +15,17 @@ export const heroContent = {
     'reliable systems.'
   ],
   subheadline: 'We help businesses save time, reduce costs, and gain full visibility by building reliable systems.',
+  supportingLine: 'Most business owners know something isn\'t working — but can\'t see exactly where time and money are slipping through the cracks.',
   ctaText: 'Book a free automation audit',
   secondaryCtaText: 'See examples',
   secondaryText: 'No technical knowledge required.'
+};
+
+export const problemsContent = {
+  label: 'The Problem',
+  headline: 'Sound familiar?',
+  intro: 'These challenges slow down nearly every growing business. The frustration compounds when what worked at 10 clients starts breaking at 50.',
+  subtext: 'The good news? Every one of these problems has a clear, practical fix.'
 };
 
 export const problems = [
@@ -43,6 +51,13 @@ export const problems = [
   }
 ];
 
+export const solutionsContent = {
+  label: 'Our Solutions',
+  headline: 'What we do',
+  intro: 'Three core services that transform how your business operates.',
+  context: 'Built for service businesses, agencies, education, and teams of 5–30 who still rely on spreadsheets and manual processes.'
+};
+
 export const solutions = [
   {
     id: 1,
@@ -63,6 +78,12 @@ export const solutions = [
     icon: 'Cpu'
   }
 ];
+
+export const examplesContent = {
+  label: 'Use Cases',
+  headline: 'Real examples, real results',
+  intro: 'Here\'s what automation looks like in practice — for agencies, service teams, and small businesses.'
+};
 
 export const examples = [
   {
@@ -110,6 +131,12 @@ export const whyUs = [
   }
 ];
 
+export const auditContent = {
+  label: 'What You Get',
+  headline: 'Free audit deliverables',
+  intro: 'No commitment, no sales pitch. Just clarity on your automation potential.'
+};
+
 export const auditDeliverables = [
   {
     id: 1,
@@ -133,9 +160,17 @@ export const auditDeliverables = [
   }
 ];
 
+export const auditReassurance = [
+  'Takes 30–45 minutes of your time',
+  'No access to sensitive systems required',
+  'You receive a short written summary'
+];
+
 export const ctaContent = {
   headline: 'From chaos to control.',
-  ctaText: 'Book a free automation audit'
+  subtext: 'Book a free 30-minute call. We\'ll review your workflows, identify opportunities, and give you a clear picture — with zero obligation.',
+  ctaText: 'Book a free automation audit',
+  reassurance: 'No pressure, no commitment. Just clarity before you decide.'
 };
 
 export const footerContent = {

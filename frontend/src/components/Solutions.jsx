@@ -1,6 +1,6 @@
 import React from 'react';
 import { Zap, Link, Cpu } from 'lucide-react';
-import { solutions } from '../data/mock';
+import { solutions, solutionsContent } from '../data/mock';
 
 const iconMap = {
   Zap: Zap,
@@ -14,13 +14,16 @@ const Solutions = () => {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="max-w-2xl mb-16">
           <p className="text-[#E3B341] font-medium text-sm tracking-wide uppercase mb-4">
-            Our Solutions
+            {solutionsContent.label}
           </p>
           <h2 className="text-3xl lg:text-4xl font-semibold text-white/92 leading-tight">
-            What we do
+            {solutionsContent.headline}
           </h2>
           <p className="mt-4 text-lg text-white/68">
-            Three core services that transform how your business operates.
+            {solutionsContent.intro}
+          </p>
+          <p className="mt-2 text-sm text-white/45">
+            {solutionsContent.context}
           </p>
         </div>
 

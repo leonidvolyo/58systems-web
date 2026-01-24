@@ -47,6 +47,9 @@ const Hero = () => {
           <p className="mt-6 text-lg lg:text-xl text-white/68 leading-relaxed">
             {heroContent.subheadline}
           </p>
+          <p className="mt-4 text-base text-white/50 leading-relaxed">
+            {heroContent.supportingLine}
+          </p>
           <div className="mt-10 flex flex-col sm:flex-row items-start gap-4">
             <a
               href="#contact"
