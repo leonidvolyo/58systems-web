@@ -1,4 +1,4 @@
-// Mock data for 58 Systems website
+// Mock data for 58 Systems website V2
 
 export const navigationLinks = [
   { label: 'Solutions', href: '#solutions' },
@@ -7,9 +7,16 @@ export const navigationLinks = [
 ];
 
 export const heroContent = {
-  headline: 'Automation, integrations, and AI for SMBs — with measurable results.',
+  headlineStart: 'Automation, integrations, and AI for SMBs — with',
+  rotatingWords: [
+    'measurable results.',
+    'clear KPIs.',
+    'full visibility.',
+    'reliable systems.'
+  ],
   subheadline: 'We help businesses save time, reduce costs, and gain full visibility by building reliable systems.',
   ctaText: 'Book a free automation audit',
+  secondaryCtaText: 'See examples',
   secondaryText: 'No technical knowledge required.'
 };
 
@@ -103,9 +110,32 @@ export const whyUs = [
   }
 ];
 
+export const auditDeliverables = [
+  {
+    id: 1,
+    title: 'Workflow map',
+    description: 'Visual breakdown of your current processes and where bottlenecks live.'
+  },
+  {
+    id: 2,
+    title: 'Quick wins list',
+    description: 'Automation opportunities ranked by impact — what to fix first.'
+  },
+  {
+    id: 3,
+    title: 'System architecture',
+    description: 'Simple, proposed structure for how your tools should connect.'
+  },
+  {
+    id: 4,
+    title: 'KPI plan',
+    description: 'What to track and how to measure success going forward.'
+  }
+];
+
 export const ctaContent = {
   headline: 'From chaos to control.',
-  ctaText: 'Get started with a free audit'
+  ctaText: 'Book a free automation audit'
 };
 
 export const footerContent = {
