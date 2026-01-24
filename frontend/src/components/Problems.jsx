@@ -4,16 +4,16 @@ import { problems } from '../data/mock';
 
 const Problems = () => {
   return (
-    <section className="py-20 lg:py-28 bg-neutral-950">
+    <section className="py-20 lg:py-28 bg-[#111826]">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="max-w-2xl mb-16">
-          <p className="text-amber-500 font-medium text-sm tracking-wide uppercase mb-4">
+          <p className="text-[#E3B341] font-medium text-sm tracking-wide uppercase mb-4">
             The Problem
           </p>
-          <h2 className="text-3xl lg:text-4xl font-semibold text-white leading-tight">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-white/92 leading-tight">
             Sound familiar?
           </h2>
-          <p className="mt-4 text-lg text-neutral-400">
+          <p className="mt-4 text-lg text-white/68">
             Most growing businesses face these challenges. The good news? They're all solvable.
           </p>
         </div>
@@ -22,17 +22,17 @@ const Problems = () => {
           {problems.map((problem) => (
             <div
               key={problem.id}
-              className="p-6 lg:p-8 bg-neutral-900 border border-neutral-800 rounded-lg"
+              className="group p-6 lg:p-8 bg-[#0B0F14] border border-white/[0.06] rounded-lg hover:border-white/[0.1] transition-colors duration-200"
             >
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-neutral-800 rounded">
-                  <AlertCircle size={20} className="text-neutral-400" />
+                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-white/[0.04] rounded">
+                  <AlertCircle size={20} className="text-white/45" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">
+                  <h3 className="text-lg font-semibold text-white/92 mb-2">
                     {problem.title}
                   </h3>
-                  <p className="text-neutral-400 leading-relaxed">
+                  <p className="text-white/68 leading-relaxed">
                     {problem.description}
                   </p>
                 </div>
