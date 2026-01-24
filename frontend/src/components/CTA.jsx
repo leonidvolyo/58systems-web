@@ -11,7 +11,7 @@ const CTA = () => {
             {ctaContent.headline}
           </h2>
           <p className="mt-6 text-lg text-white/68">
-            Let's discuss how automation can help your business grow without growing pains.
+            {ctaContent.subtext}
           </p>
           <div className="mt-10">
             <a
@@ -23,7 +23,7 @@ const CTA = () => {
             </a>
           </div>
           <p className="mt-6 text-sm text-white/45">
-            No commitment required. We'll analyze your current workflows and show you what's possible.
+            {ctaContent.reassurance}
           </p>
         </div>
       </div>

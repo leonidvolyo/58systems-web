@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
-import { examples } from '../data/mock';
+import { examples, examplesContent } from '../data/mock';
 
 const Examples = () => {
   return (
@@ -8,13 +8,13 @@ const Examples = () => {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="max-w-2xl mb-16">
           <p className="text-[#E3B341] font-medium text-sm tracking-wide uppercase mb-4">
-            Use Cases
+            {examplesContent.label}
           </p>
           <h2 className="text-3xl lg:text-4xl font-semibold text-white/92 leading-tight">
-            Real examples, real results
+            {examplesContent.headline}
           </h2>
           <p className="mt-4 text-lg text-white/68">
-            Here's what automation looks like in practice.
+            {examplesContent.intro}
           </p>
         </div>
 
