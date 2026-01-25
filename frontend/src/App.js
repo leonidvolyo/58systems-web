@@ -10,31 +10,28 @@ import AuditDeliverables from "./components/AuditDeliverables";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 
-const Home = () => {
-  return (
-    <div className="min-h-screen bg-[#0B0F14]">
-      {/* Noise overlay for premium texture */}
-      <div className="noise-overlay" aria-hidden="true" />
-      
-      <Header />
-      <main>
-        <Hero />
-        <Problems />
-        <Solutions />
-        <Examples />
-        <WhyUs />
-        <AuditDeliverables />
-        <CTA />
-      </main>
-      <Footer />
-    </div>
-  );
-};
+const Home = () => (
+  <div className="min-h-screen bg-[#0B0F14]">
+    <div className="noise-overlay" aria-hidden="true" />
+    <Header />
+    <main>
+      <Hero />
+      <Problems />
+      <Solutions />
+      <Examples />
+      <WhyUs />
+      <AuditDeliverables />
+      <CTA />
+    </main>
+    <Footer />
+  </div>
+);
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* IMPORTANT for GitHub Pages */}
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
