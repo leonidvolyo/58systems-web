@@ -176,6 +176,6 @@ export const ctaContent = {
 export const footerContent = {
   companyName: '58 Systems',
   tagline: 'Automation & Integration Partner',
-  email: 'hello@58systems.com',
+  email: 'info.58systems@gmail.com',
   copyright: `© ${new Date().getFullYear()} 58 Systems. All rights reserved.`
 };

@@ -29,7 +29,7 @@ export default function CTA() {
     <section id="contact" className="py-24 bg-[#0B0F14] text-white">
       <div className="max-w-xl mx-auto px-6">
         <h2 className="text-3xl font-semibold mb-6">
-          Let’s talk
+          Book a free automation audit
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -43,7 +43,7 @@ export default function CTA() {
           <input
             name="name"
             required
-            placeholder="Your name"
+            placeholder="Your name or nickname"
             className="w-full px-4 py-3 bg-[#111826] border border-white/10 rounded"
           />
 
@@ -58,7 +58,7 @@ export default function CTA() {
           <textarea
             name="message"
             required
-            placeholder="Tell us about your project"
+            placeholder="What’s breaking, slow, or manual in your workflow?"
             rows={4}
             className="w-full px-4 py-3 bg-[#111826] border border-white/10 rounded"
           />
