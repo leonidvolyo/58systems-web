@@ -23,7 +23,7 @@ const Hero = () => {
       setCurrentWordIndex((prev) => 
         (prev + 1) % heroContent.rotatingWords.length
       );
-    }, 3000);
+    }, 2500);
 
     return () => clearInterval(interval);
   }, [prefersReducedMotion]);
