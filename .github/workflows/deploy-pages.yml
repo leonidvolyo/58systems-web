@@ -39,8 +39,7 @@ jobs:
 
       - name: Build
         env:
-          # Makes CRA generate correct asset paths for /<repo-name>/
-          PUBLIC_URL: /${{ github.event.repository.name }}
+          PUBLIC_URL: /
         run: npm run build
 
       - name: Upload artifact
