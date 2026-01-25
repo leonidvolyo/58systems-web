@@ -12,8 +12,8 @@ A clean, minimalistic one-page website for 58 Systems — an automation and inte
 
 ```bash
 cd frontend
-yarn install
-yarn start
+npm install
+npm start
 ```
 
 The site will be available at `http://localhost:3000`
@@ -28,7 +28,7 @@ The site will be available at `http://localhost:3000`
 
 ```bash
 cd frontend
-yarn add gh-pages
+npm install gh-pages --save-dev
 ```
 
 #### Step 2: Update package.json
@@ -44,7 +44,7 @@ Add the `homepage` field and deploy scripts to `frontend/package.json`:
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "predeploy": "yarn build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   }
 }
@@ -77,7 +77,7 @@ git push -u origin main
 
 ```bash
 cd frontend
-yarn deploy
+npm run deploy
 ```
 
 This will:
@@ -110,8 +110,8 @@ pages:
       - frontend/node_modules/
   script:
     - cd frontend
-    - yarn install
-    - yarn build
+    - npm install
+    - npm run build
     - mv build ../public
   artifacts:
     paths:
