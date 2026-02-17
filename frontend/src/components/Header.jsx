@@ -1,4 +1,3 @@
-"import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { navigationLinks } from '../data/mock';
 
@@ -16,7 +15,7 @@ const Header = () => {
               alt=\"58\"
               className=\"h-8 w-auto\"
             />
-            <span 
+            <span
               className=\"text-xl text-white/90 tracking-wide\"
               style={{ fontFamily: \"'Source Sans 3', sans-serif\", fontWeight: 700 }}
             >

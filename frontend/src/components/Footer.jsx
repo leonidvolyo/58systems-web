@@ -10,12 +10,12 @@ const Footer = () => {
           {/* Logo and tagline */}
           <div>
             <a href=\"/\" className=\"flex items-center gap-2\">
-              <img 
+              <img
                 src=\"/logo-58.png\"
-                alt=\"58\" 
+                alt=\"58\"
                 className=\"h-6 w-auto\"
               />
-              <span 
+              <span
                 className=\"text-lg text-white/90 tracking-wide\"
                 style={{ fontFamily: \"'Source Sans 3', sans-serif\", fontWeight: 700 }}
               >
@@ -29,7 +29,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div className=\"text-sm\">
-            <a 
+            <a
               href={`mailto:${footerContent.email}`}
               className=\"text-white/68 hover:text-white/92 transition-opacity duration-200\"
             >
@@ -50,4 +50,3 @@ const Footer = () => {
 
 export default Footer;
 "
-Observation: Overwrite successful: /app/frontend/src/components/Footer.jsx
