@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <a href=\"/\" className=\"flex items-center gap-2\">
               <img 
-                src=\"/frontend/public/logo-58.png\"
+                src=\"/logo-58.png\"
                 alt=\"58\" 
                 className=\"h-6 w-auto\"
               />
