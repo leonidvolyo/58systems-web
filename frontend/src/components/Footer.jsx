@@ -1,5 +1,4 @@
-
-Action: file_editor create /app/frontend/src/components/Footer.jsx --file-text "import React from 'react';
+import React from 'react';
 import { footerContent } from '../data/mock';
 
 const Footer = () => {
