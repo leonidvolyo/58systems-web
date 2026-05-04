@@ -10,7 +10,7 @@ const ValuePillars = () => {
   return (
     <section
       data-testid="values-section"
-      className="relative py-20 lg:py-28 bg-ink border-t border-white/[0.05]"
+      className="relative py-14 lg:py-16 bg-ink border-t border-white/[0.05]"
     >
       <div className="max-w-container mx-auto px-6 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-10 mb-14">

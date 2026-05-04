@@ -16,7 +16,7 @@ const Hero = () => {
     <section
       id="top"
       data-testid="hero-section"
-      className="relative pt-28 lg:pt-32 pb-16 lg:pb-24 bg-ink overflow-hidden"
+      className="relative pt-28 lg:pt-32 pb-10 lg:pb-12 bg-ink overflow-hidden"
     >
       {/* Grid background */}
       <div className="absolute inset-0 bg-grid-dark opacity-[0.55] [mask-image:linear-gradient(to_bottom,black_30%,transparent_95%)]" />
@@ -76,21 +76,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* === Left col, row 2 — trust pills (below the buttons) === */}
-          <div className="lg:col-span-5 lg:row-start-2 lg:order-3 mt-10">
-            <div className="flex flex-wrap gap-2">
-              {t.trust.items.map((item) => (
-                <span
-                  key={item}
-                  className="inline-flex items-center gap-2 text-[12.5px] text-white/65 border border-white/10 rounded-full px-3 py-1.5 bg-white/[0.02]"
-                  data-testid={`trust-pill-${item.slice(0, 16)}`}
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-orange" />
-                  {item}
-                </span>
-              ))}
-            </div>
-          </div>
+          {/* === Left col, row 2 — (trust pills removed per user request) === */}
 
           {/* === Right col, row 1 — diagram, aligned to bottom of row 1
                 so its bottom matches the buttons bottom in any language === */}

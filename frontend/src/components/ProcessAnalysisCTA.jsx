@@ -138,6 +138,19 @@ const ProcessAnalysisCTA = () => {
             )}
 
             <div className="bg-white text-ink rounded-2xl border border-paper-line shadow-[0_30px_80px_-30px_rgba(0,0,0,0.6)] p-7 lg:p-9">
+              {/* Sales-oriented title inside the form card */}
+              <div className="mb-6">
+                <h3
+                  data-testid="form-title"
+                  className="font-display text-ink text-[24px] lg:text-[26px] tracking-[-0.02em] leading-[1.15]"
+                >
+                  {f.title}
+                </h3>
+                <p className="mt-2 text-ink/70 text-[14.5px] leading-relaxed">
+                  {f.subtitle}
+                </p>
+              </div>
+
               <form
                 onSubmit={handleSubmit}
                 className="space-y-4"
@@ -154,48 +167,13 @@ const ProcessAnalysisCTA = () => {
                 />
                 <input type="hidden" name="ui_lang" value={lang} />
 
-                <Field label={f.name} htmlFor="cta-name">
+                <Field label={f.email} htmlFor="cta-email">
                   <input
-                    id="cta-name"
-                    name="name"
+                    id="cta-email"
+                    type="email"
+                    name="email"
                     required
-                    placeholder=" "
-                    data-testid="form-name"
-                    className="w-full px-3.5 py-3 bg-paper border border-paper-line rounded-md text-[15px] text-ink placeholder-ink/40 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition"
-                  />
-                </Field>
-
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <Field label={f.email} htmlFor="cta-email">
-                    <input
-                      id="cta-email"
-                      type="email"
-                      name="email"
-                      required
-                      data-testid="form-email"
-                      className="w-full px-3.5 py-3 bg-paper border border-paper-line rounded-md text-[15px] text-ink placeholder-ink/40 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition"
-                    />
-                  </Field>
-
-                  <Field label={f.company} htmlFor="cta-company">
-                    <input
-                      id="cta-company"
-                      name="company"
-                      required
-                      data-testid="form-company"
-                      className="w-full px-3.5 py-3 bg-paper border border-paper-line rounded-md text-[15px] text-ink placeholder-ink/40 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition"
-                    />
-                  </Field>
-                </div>
-
-                <Field label={f.website} htmlFor="cta-website">
-                  <input
-                    id="cta-website"
-                    name="website"
-                    type="url"
-                    inputMode="url"
-                    placeholder="https://"
-                    data-testid="form-website"
+                    data-testid="form-email"
                     className="w-full px-3.5 py-3 bg-paper border border-paper-line rounded-md text-[15px] text-ink placeholder-ink/40 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition"
                   />
                 </Field>
@@ -205,8 +183,7 @@ const ProcessAnalysisCTA = () => {
                     id="cta-message"
                     ref={messageRef}
                     name="message"
-                    rows={4}
-                    required
+                    rows={3}
                     data-testid="form-message"
                     onChange={(e) => {
                       // user is now editing; stop overwriting on chip click
@@ -216,22 +193,6 @@ const ProcessAnalysisCTA = () => {
                     }}
                     className="w-full px-3.5 py-3 bg-paper border border-paper-line rounded-md text-[15px] text-ink placeholder-ink/40 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition resize-y"
                   />
-                </Field>
-
-                <Field label={f.language} htmlFor="cta-pref-lang">
-                  <select
-                    id="cta-pref-lang"
-                    name="preferred_language"
-                    defaultValue={lang}
-                    data-testid="form-language"
-                    className="w-full px-3.5 py-3 bg-paper border border-paper-line rounded-md text-[15px] text-ink focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition"
-                  >
-                    {f.languageOptions.map((opt) => (
-                      <option key={opt.value} value={opt.value}>
-                        {opt.label}
-                      </option>
-                    ))}
-                  </select>
                 </Field>
 
                 <button
@@ -244,7 +205,7 @@ const ProcessAnalysisCTA = () => {
                   {status !== "loading" && <ArrowRight size={16} />}
                 </button>
 
-                <p className="text-[12px] text-ink/45 leading-snug">{f.consent}</p>
+                <p className="text-[12px] text-ink/55 leading-snug">{f.consent}</p>
 
                 {status === "success" && (
                   <div
@@ -277,7 +238,7 @@ const ProcessAnalysisCTA = () => {
 
 const Field = ({ label, htmlFor, children }) => (
   <label htmlFor={htmlFor} className="block">
-    <span className="block font-mono text-[10.5px] tracking-widest uppercase text-ink/55 mb-1.5">
+    <span className="block font-mono text-[11px] tracking-widest uppercase text-ink/75 mb-1.5">
       {label}
     </span>
     {children}
