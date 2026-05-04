@@ -1,27 +1,29 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { LanguageProvider } from "./i18n/LanguageContext";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Problems from "./components/Problems";
-import Solutions from "./components/Solutions";
-import Examples from "./components/Examples";
-import WhyUs from "./components/WhyUs";
-import AuditDeliverables from "./components/AuditDeliverables";
-import CTA from "./components/CTA";
+import ValuePillars from "./components/ValuePillars";
+import ProductSystems from "./components/ProductSystems";
+import SystemStories from "./components/SystemStories";
+import Process from "./components/Process";
+import Why58Systems from "./components/Why58Systems";
+import ProcessAnalysisCTA from "./components/ProcessAnalysisCTA";
 import Footer from "./components/Footer";
 
 const Home = () => (
-  <div className="min-h-screen bg-[#0B0F14]">
-    <div className="noise-overlay" aria-hidden="true" />
+  <div className="min-h-screen bg-ink text-white" data-testid="home-page">
     <Header />
     <main>
       <Hero />
       <Problems />
-      <Solutions />
-      <Examples />
-      <WhyUs />
-      <AuditDeliverables />
-      <CTA />
+      <ValuePillars />
+      <ProductSystems />
+      <SystemStories />
+      <Process />
+      <Why58Systems />
+      <ProcessAnalysisCTA />
     </main>
     <Footer />
   </div>
@@ -30,12 +32,14 @@ const Home = () => (
 function App() {
   return (
     <div className="App">
-      {/* IMPORTANT for GitHub Pages */}
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </BrowserRouter>
+      <LanguageProvider>
+        {/* IMPORTANT for GitHub Pages */}
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+      </LanguageProvider>
     </div>
   );
 }

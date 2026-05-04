@@ -1,18 +1,2 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Selection color - premium amber */
-::selection {
-  background-color: rgba(227, 179, 65, 0.3);
-  color: white;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}
+/* App-level overrides — tokens & globals live in index.css */
+.App { min-height: 100vh; }

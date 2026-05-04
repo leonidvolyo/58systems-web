@@ -1,73 +1,116 @@
-import React, { useState, useEffect } from 'react';
-import { ArrowRight } from 'lucide-react';
-import { heroContent } from '../data/mock';
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import { useLanguage } from "../i18n/LanguageContext";
+import SystemDiagram from "./SystemDiagram";
 
 const Hero = () => {
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const { t } = useLanguage();
 
-  useEffect(() => {
-    // Check for reduced motion preference
-    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-    setPrefersReducedMotion(mediaQuery.matches);
-
-    const handleChange = (e) => setPrefersReducedMotion(e.matches);
-    mediaQuery.addEventListener('change', handleChange);
-    return () => mediaQuery.removeEventListener('change', handleChange);
-  }, []);
-
-  useEffect(() => {
-    if (prefersReducedMotion) return;
-
-    const interval = setInterval(() => {
-      setCurrentWordIndex((prev) => 
-        (prev + 1) % heroContent.rotatingWords.length
-      );
-    }, 2500);
-
-    return () => clearInterval(interval);
-  }, [prefersReducedMotion]);
+  // Highlight the last word of the headline in the accent color so the line
+  // remains scannable in both EN and CS.
+  const headlineWords = t.hero.headline.split(" ");
+  const lead = headlineWords.slice(0, -1).join(" ");
+  const tail = headlineWords[headlineWords.length - 1];
 
   return (
-    <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 bg-[#0B0F14] overflow-hidden">
-      {/* Subtle radial glow */}
-      <div className="hero-glow" />
-      
-      <div className="relative max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="max-w-3xl">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-semibold text-white/92 leading-tight tracking-tight">
-            {heroContent.headlineStart}{' '}
-            <span 
-              key={currentWordIndex}
-              className={`text-[#E3B341] ${!prefersReducedMotion ? 'rotating-word' : ''}`}
+    <section
+      id="top"
+      data-testid="hero-section"
+      className="relative pt-28 lg:pt-32 pb-16 lg:pb-24 bg-ink overflow-hidden"
+    >
+      {/* Grid background */}
+      <div className="absolute inset-0 bg-grid-dark opacity-[0.55] [mask-image:linear-gradient(to_bottom,black_30%,transparent_95%)]" />
+      {/* Soft amber halo */}
+      <div
+        className="absolute -top-32 -left-24 w-[520px] h-[520px] rounded-full opacity-30 blur-3xl"
+        style={{ background: "radial-gradient(closest-side, rgba(242,160,58,0.35), transparent 70%)" }}
+        aria-hidden="true"
+      />
+
+      <div className="relative max-w-container mx-auto px-6 lg:px-10">
+        {/*
+          Layout (lg+):
+            • Row 1: text-up-to-buttons (col 1–5) + diagram (col 6–12, justify-end)
+            • Row 2: trust pills (col 1–5)
+          Effect: the diagram bottom always aligns with the BUTTONS bottom,
+          regardless of how the trust-pill text wraps in EN vs CS.
+
+          On mobile, items stack naturally in source order:
+            text-up-to-buttons → trust pills → diagram.
+        */}
+        <div className="lg:grid lg:grid-cols-12 lg:grid-rows-[auto_auto] lg:gap-x-12 lg:gap-y-0">
+          {/* === Left col, row 1 — eyebrow / headline / subheadline / buttons === */}
+          <div className="lg:col-span-5 lg:row-start-1 lg:order-1 lg:pt-2">
+            <p className="eyebrow text-orange" data-testid="hero-eyebrow">
+              {t.hero.eyebrow}
+            </p>
+            <h1
+              className="mt-5 font-display text-white text-[40px] sm:text-5xl lg:text-[54px] xl:text-[60px] leading-[1.04] tracking-[-0.03em]"
+              data-testid="hero-headline"
             >
-              {heroContent.rotatingWords[currentWordIndex]}
-            </span>
-          </h1>
-          <p className="mt-6 text-lg lg:text-xl text-white/68 leading-relaxed">
-            {heroContent.subheadline}
-          </p>
-          <p className="mt-4 text-base text-white/50 leading-relaxed">
-            {heroContent.supportingLine}
-          </p>
-          <div className="mt-10 flex flex-col sm:flex-row items-start gap-4">
-            <a
-              href="#contact"
-              className="btn-premium inline-flex items-center gap-2 px-6 py-3.5 text-[#0B0F14] font-medium rounded"
+              {lead} <span className="text-orange">{tail}</span>
+            </h1>
+            <p
+              className="mt-6 text-[16.5px] lg:text-[18px] text-white/72 leading-relaxed max-w-xl"
+              data-testid="hero-subheadline"
             >
-              {heroContent.ctaText}
-              <ArrowRight size={18} />
-            </a>
-            <a
-              href="#examples"
-              className="inline-flex items-center gap-2 px-6 py-3.5 text-white/68 font-medium rounded border border-white/[0.1] hover:border-white/[0.2] hover:text-white/92 transition-all duration-200"
-            >
-              {heroContent.secondaryCtaText}
-            </a>
+              {t.hero.subheadline}
+            </p>
+
+            <div className="mt-9 flex flex-wrap items-center gap-3">
+              <a
+                href="#analysis"
+                data-testid="hero-cta-primary"
+                className="btn-orange inline-flex items-center gap-2 px-5 py-3.5 rounded-md text-[14.5px]"
+              >
+                {t.hero.ctaPrimary}
+                <ArrowRight size={17} />
+              </a>
+              <a
+                href="#systems"
+                data-testid="hero-cta-secondary"
+                className="btn-ghost-dark inline-flex items-center gap-2 px-5 py-3.5 rounded-md text-[14.5px]"
+              >
+                {t.hero.ctaSecondary}
+              </a>
+            </div>
           </div>
-          <p className="mt-4 text-sm text-white/45">
-            {heroContent.secondaryText}
-          </p>
+
+          {/* === Left col, row 2 — trust pills (below the buttons) === */}
+          <div className="lg:col-span-5 lg:row-start-2 lg:order-3 mt-10">
+            <div className="flex flex-wrap gap-2">
+              {t.trust.items.map((item) => (
+                <span
+                  key={item}
+                  className="inline-flex items-center gap-2 text-[12.5px] text-white/65 border border-white/10 rounded-full px-3 py-1.5 bg-white/[0.02]"
+                  data-testid={`trust-pill-${item.slice(0, 16)}`}
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-orange" />
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* === Right col, row 1 — diagram, aligned to bottom of row 1
+                so its bottom matches the buttons bottom in any language === */}
+          <div className="mt-12 lg:mt-0 lg:col-span-7 lg:row-start-1 lg:order-2 lg:flex lg:flex-col lg:justify-end">
+            <div className="relative">
+              <p className="hidden lg:block absolute -top-9 right-0 text-[12px] text-white/45 max-w-xs text-right">
+                {t.hero.diagramTitle}
+              </p>
+              <SystemDiagram
+                inputItems={t.hero.diagramInputItems}
+                outputItems={t.hero.diagramOutputItems}
+                centerLabel={t.hero.diagramCenter}
+                subtitleLines={t.hero.engineSubtitle}
+                title={t.hero.diagramTitle}
+              />
+              <p className="lg:hidden mt-3 text-[12.5px] text-white/55 text-center">
+                {t.hero.diagramTitle}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

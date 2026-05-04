@@ -1,164 +1,227 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+3:wght@600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Premium Dark Theme Colors */
+/* ---------- 58 Systems theme tokens ---------- */
 :root {
-  --bg-base: #0B0F14;
-  --bg-surface: #111826;
-  --bg-surface-alt: #121A24;
-  --border-subtle: rgba(255, 255, 255, 0.06);
-  --border-medium: rgba(255, 255, 255, 0.1);
-  --text-primary: rgba(255, 255, 255, 0.92);
-  --text-secondary: rgba(255, 255, 255, 0.68);
-  --text-muted: rgba(255, 255, 255, 0.45);
-  --accent-amber: #E3B341;
-  --accent-amber-hover: #D4A017;
-  --accent-amber-muted: rgba(227, 179, 65, 0.15);
+  /* Brand */
+  --c-ink: #0B0F14;            /* deep graphite */
+  --c-ink-soft: #111826;       /* surface dark */
+  --c-ink-line: rgba(255, 255, 255, 0.08);
+  --c-ink-line-strong: rgba(255, 255, 255, 0.16);
+
+  --c-paper: #FAFAF7;          /* warm near-white */
+  --c-paper-pure: #FFFFFF;
+  --c-paper-line: #E7E5E0;
+  --c-paper-line-strong: #D8D5CE;
+
+  --c-text-on-dark: rgba(255, 255, 255, 0.92);
+  --c-text-on-dark-muted: rgba(255, 255, 255, 0.64);
+  --c-text-on-dark-faint: rgba(255, 255, 255, 0.42);
+
+  --c-text-on-light: #0B0F14;
+  --c-text-on-light-muted: #4B5563;
+  --c-text-on-light-faint: #6B7280;
+
+  --c-orange: #F2A03A;         /* primary accent — warm honey amber, not fire, not gold */
+  --c-orange-hot: #FFB55A;
+  --c-orange-deep: #C9791C;
+  --c-orange-soft: rgba(242, 160, 58, 0.12);
+  --c-orange-line: rgba(242, 160, 58, 0.32);
+
+  /* Shadcn baseline (kept so existing UI primitives don't break) */
+  --background: 220 25% 5%;
+  --foreground: 0 0% 98%;
+  --card: 220 25% 7%;
+  --card-foreground: 0 0% 98%;
+  --popover: 220 25% 7%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 32 88% 58%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 18% 12%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 220 18% 12%;
+  --muted-foreground: 0 0% 63.9%;
+  --accent: 32 88% 58%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 220 15% 14%;
+  --input: 220 15% 14%;
+  --ring: 32 88% 58%;
+  --radius: 0.625rem;
 }
 
-body {
-  margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+* {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--bg-base);
-  color: var(--text-primary);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Selection color - premium amber */
+body {
+  margin: 0;
+  font-family: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-feature-settings: "ss01" on, "cv11" on;
+  color: var(--c-text-on-dark);
+  background-color: var(--c-ink);
+}
+
 ::selection {
-  background-color: rgba(227, 179, 65, 0.3);
+  background-color: rgba(242, 160, 58, 0.32);
   color: white;
 }
 
-/* Subtle noise overlay */
-.noise-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0.04;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+/* ---------- Typography utilities ---------- */
+.font-display {
+  font-family: 'Cabinet Grotesk', 'DM Sans', system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
-/* Hero radial glow */
-.hero-glow {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 800px;
-  height: 600px;
-  background: radial-gradient(ellipse at center top, rgba(227, 179, 65, 0.06) 0%, transparent 70%);
-  pointer-events: none;
+.font-mono-x {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
-/* Rotating word animation */
-@keyframes fadeSlideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  15% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  85% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-12px);
-  }
+/* Eyebrow label used across sections */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
-.rotating-word {
-  display: inline-block;
-  animation: fadeSlideUp 3s ease-in-out infinite;
+.eyebrow::before {
+  content: "";
+  width: 1.6rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
 }
 
-/* Respect reduced motion preference */
-@media (prefers-reduced-motion: reduce) {
-  .rotating-word {
-    animation: none;
-  }
-  html {
-    scroll-behavior: auto;
-  }
+/* ---------- Buttons ---------- */
+.btn-orange {
+  background: var(--c-orange);
+  color: #0B0F14;
+  font-weight: 600;
+  border: 1px solid var(--c-orange);
+  transition: background-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
 }
-
-/* Premium CTA button gradient */
-.btn-premium {
-  background: linear-gradient(180deg, #E3B341 0%, #C98A1A 100%);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.btn-premium:hover {
-  opacity: 0.9;
+.btn-orange:hover {
+  background: var(--c-orange-hot);
   transform: translateY(-1px);
+  box-shadow: 0 6px 18px -8px rgba(242, 160, 58, 0.6);
+}
+.btn-orange:active { transform: translateY(0); }
+
+.btn-ghost-dark {
+  background: transparent;
+  color: var(--c-text-on-dark);
+  border: 1px solid var(--c-ink-line-strong);
+  font-weight: 500;
+  transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease;
+}
+.btn-ghost-dark:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.04);
 }
 
-/* Hide Emergent watermark */
-[class*="emergent"],
+.btn-ghost-light {
+  background: transparent;
+  color: var(--c-text-on-light);
+  border: 1px solid var(--c-paper-line-strong);
+  font-weight: 500;
+  transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease;
+}
+.btn-ghost-light:hover {
+  border-color: var(--c-orange);
+  color: var(--c-orange-deep);
+}
+
+/* ---------- Background textures ---------- */
+.bg-grid-dark {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+  background-position: -1px -1px;
+}
+
+.bg-grid-light {
+  background-image:
+    linear-gradient(to right, rgba(11, 15, 20, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(11, 15, 20, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+  background-position: -1px -1px;
+}
+
+.bg-noise {
+  position: relative;
+}
+.bg-noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---------- Subtle motion ---------- */
+@keyframes flow {
+  0% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -60; }
+}
+.diagram-flow {
+  stroke-dasharray: 4 6;
+  animation: flow 3.5s linear infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+.pulse-dot {
+  animation: pulse-dot 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .diagram-flow, .pulse-dot { animation: none; }
+}
+
+/* ---------- Hide Emergent watermark (kept from original repo) ---------- */
+[class*="emergent"]:not([class*="emergentbase"]),
 [id*="emergent"],
-a[href*="emergent"],
-div[style*="emergent"] {
+a[href*="emergent.sh/badge"] {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
 }
 
+/* ---------- shadcn base bridge ---------- */
 @layer base {
-  :root {
-    --background: 220 20% 4%;
-    --foreground: 0 0% 98%;
-    --card: 220 20% 7%;
-    --card-foreground: 0 0% 98%;
-    --popover: 220 20% 7%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 45 75% 58%;
-    --primary-foreground: 220 20% 4%;
-    --secondary: 220 15% 12%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 220 15% 12%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 220 15% 12%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 220 15% 12%;
-    --input: 220 15% 12%;
-    --ring: 45 75% 58%;
-    --radius: 0.5rem;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
+  *,
+  *::before,
+  *::after {
+    border-color: hsl(var(--border));
   }
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Card hover lift */
+.card-lift {
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+.card-lift:hover {
+  transform: translateY(-2px);
 }

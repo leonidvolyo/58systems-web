@@ -4,28 +4,29 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#0B0F14" />
-        <meta name="description" content="58 Systems — Automation, integrations, and AI for SMBs with measurable results. We help businesses save time, reduce costs, and gain full visibility." />
+        <meta name="description" content="58 Systems builds practical automation systems for SMBs — connect tools, reduce manual work, ship stable workflows. AI only where it makes sense." />
+
         <!-- Favicons -->
-        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="96x96" href="%PUBLIC_URL%/favicon-96x96.png" />
+        <link rel="icon" type="image/x-icon" href="%PUBLIC_URL%/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+        <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest" />
 
-        <!--
-        manifest.json provides metadata used when your web app is installed on a
-        user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-        -->
-        <!--
-        Notice the use of %PUBLIC_URL% in the tags above.
-        It will be replaced with the URL of the `public` folder during the build.
-        Only files inside the `public` folder can be referenced from the HTML.
+        <!-- Fonts: Cabinet Grotesk (Fontshare) + DM Sans (Google) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://api.fontshare.com" />
+        <link
+            href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
 
-        Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-        work correctly both with client-side routing and a non-root public URL.
-        Learn how to configure a non-root public URL by running `npm run build`.
-        -->
-        <title>58 Systems | Web</title>
+        <title>58 Systems — Business automation systems for growing SMBs</title>
         <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
         <!--
         These two scripts have been added for the Visual Edits, please do not edit or remove them
@@ -54,16 +55,6 @@
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
-        <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
         <script>
             !(function (t, e) {
                 var o, n, p, r;
@@ -128,7 +119,7 @@
             })(document, window.posthog || []);
             posthog.init("phc_xAvL2Iq4tFmANRE7kzbKwaSqp1HJjN7x48s3vr0CMjs", {
                 api_host: "https://us.i.posthog.com",
-                person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well,
+                person_profiles: "identified_only",
                 session_recording: {
                     recordCrossOriginIframes: true,
                 },

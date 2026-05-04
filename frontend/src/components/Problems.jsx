@@ -1,43 +1,46 @@
-import React from 'react';
-import { AlertCircle } from 'lucide-react';
-import { problems, problemsContent } from '../data/mock';
+import React from "react";
+import { useLanguage } from "../i18n/LanguageContext";
 
 const Problems = () => {
+  const { t } = useLanguage();
+
   return (
-    <section className="py-20 lg:py-28 bg-[#111826]">
-      <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="max-w-2xl mb-16">
-          <p className="text-[#E3B341] font-medium text-sm tracking-wide uppercase mb-4">
-            {problemsContent.label}
-          </p>
-          <h2 className="text-3xl lg:text-4xl font-semibold text-white/92 leading-tight">
-            {problemsContent.headline}
-          </h2>
-          <p className="mt-4 text-lg text-white/68">
-            {problemsContent.intro}
-          </p>
-          <p className="mt-3 text-base text-white/50">
-            {problemsContent.subtext}
-          </p>
+    <section
+      id="problems"
+      data-testid="problems-section"
+      className="relative py-20 lg:py-28 bg-ink border-t border-white/[0.05]"
+    >
+      <div className="max-w-container mx-auto px-6 lg:px-10">
+        <div className="grid lg:grid-cols-12 gap-10 mb-14 lg:mb-20">
+          <div className="lg:col-span-5">
+            <p className="eyebrow text-orange">{t.problems.eyebrow}</p>
+            <h2 className="mt-4 font-display text-white text-3xl sm:text-4xl lg:text-[44px] leading-[1.1] tracking-[-0.02em]">
+              {t.problems.headline}
+            </h2>
+          </div>
+          <div className="lg:col-span-6 lg:col-start-7 self-end">
+            <p className="text-white/60 text-[16px] leading-relaxed">
+              {t.problems.headline.endsWith("?") ? "" : ""}
+            </p>
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-          {problems.map((problem) => (
+        <div className="grid md:grid-cols-2 gap-px bg-white/[0.06] border border-white/[0.06] rounded-xl overflow-hidden">
+          {t.problems.cards.map((card, i) => (
             <div
-              key={problem.id}
-              className="group p-6 lg:p-8 bg-[#0B0F14] border border-white/[0.06] rounded-lg hover:border-white/[0.1] transition-colors duration-200"
+              key={card.title}
+              data-testid={`problem-card-${i + 1}`}
+              className="bg-ink p-7 lg:p-9 hover:bg-ink-soft transition-colors duration-200"
             >
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-white/[0.04] rounded">
-                  <AlertCircle size={20} className="text-white/45" />
-                </div>
+              <div className="flex items-start gap-5">
+                <span className="font-mono text-[12px] text-orange/80 mt-1 tracking-widest">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
                 <div>
-                  <h3 className="text-lg font-semibold text-white/92 mb-2">
-                    {problem.title}
+                  <h3 className="font-display text-white text-[20px] tracking-[-0.01em] mb-2">
+                    {card.title}
                   </h3>
-                  <p className="text-white/68 leading-relaxed">
-                    {problem.description}
-                  </p>
+                  <p className="text-white/60 text-[15px] leading-relaxed">{card.body}</p>
                 </div>
               </div>
             </div>
