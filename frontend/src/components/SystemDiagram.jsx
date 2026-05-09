@@ -74,20 +74,20 @@ const SystemDiagram = ({ inputItems, outputItems, centerLabel, title, subtitleLi
             return (
               <path
                 key={`il-${i}`}
-                d={`M 210 ${startY} C 270 ${startY}, 310 ${CENTER_Y}, ${CENTER_X - 84} ${CENTER_Y}`}
+                d={`M 210 ${startY} C 240 ${startY}, ${CENTER_X - 110} ${CENTER_Y}, ${CENTER_X - 84} ${CENTER_Y}`}
                 stroke="rgba(242,160,58,0.42)"
                 strokeWidth="1.3"
                 className="diagram-flow"
               />
             );
           })}
-          {/* Connection lines: engine -> outputs */}
+          {/* Connection lines: engine -> outputs (each beam points directly at its card) */}
           {outputs.map((_, i) => {
             const endY = TOP + i * ROW_GAP;
             return (
               <path
                 key={`ol-${i}`}
-                d={`M ${CENTER_X + 84} ${CENTER_Y} C ${CENTER_X + 130} ${CENTER_Y}, ${CENTER_X + 170} ${endY}, ${WIDTH - 210} ${endY}`}
+                d={`M ${CENTER_X + 84} ${CENTER_Y} C ${CENTER_X + 110} ${CENTER_Y}, ${WIDTH - 240} ${endY}, ${WIDTH - 210} ${endY}`}
                 stroke="rgba(242,160,58,0.42)"
                 strokeWidth="1.3"
                 className="diagram-flow"
@@ -117,7 +117,7 @@ const SystemDiagram = ({ inputItems, outputItems, centerLabel, title, subtitleLi
             />
             <text
               x={CENTER_X}
-              y={CENTER_Y - 14}
+              y={CENTER_Y - 16}
               textAnchor="middle"
               fill="white"
               fontFamily="Cabinet Grotesk, DM Sans, sans-serif"
@@ -131,12 +131,12 @@ const SystemDiagram = ({ inputItems, outputItems, centerLabel, title, subtitleLi
               <text
                 key={`st-${i}`}
                 x={CENTER_X}
-                y={CENTER_Y + 8 + i * 12}
+                y={CENTER_Y + 12 + i * 14}
                 textAnchor="middle"
-                fill="rgba(242,160,58,0.85)"
+                fill="rgba(242,160,58,0.95)"
                 fontFamily="JetBrains Mono, monospace"
-                fontSize="9.5"
-                letterSpacing="2"
+                fontSize="11.5"
+                letterSpacing="1.6"
               >
                 {line}
               </text>

@@ -25,7 +25,7 @@ export const translations = {
       diagramOutputs: "Outputs",
       diagramInputItems: ["Web forms", "Email", "CRM", "Sheets", "E-commerce", "Support"],
       diagramOutputItems: ["CRM update", "Sales alert", "Follow-up", "Dashboard", "Report", "Customer reply"],
-      engineSubtitle: ["orchestrate", "log", "monitor"],
+      engineSubtitle: ["automate", "orchestrate", "support"],
     },
     trust: {
       items: [
@@ -446,7 +446,7 @@ export const translations = {
       diagramOutputs: "Výstupy",
       diagramInputItems: ["Web formuláře", "E-mail", "CRM", "Tabulky", "E-commerce", "Podpora"],
       diagramOutputItems: ["Aktualizace CRM", "Notifikace pro obchod", "Follow-up", "Dashboard", "Report", "Odpověď zákazníkovi"],
-      engineSubtitle: ["orchestrace", "logy", "monitoring"],
+      engineSubtitle: ["automatizace", "orchestrace", "podpora"],
     },
     trust: {
       items: [
