@@ -75,8 +75,8 @@ const SystemDiagram = ({ inputItems, outputItems, centerLabel, title, subtitleLi
               <path
                 key={`il-${i}`}
                 d={`M 210 ${startY} C 240 ${startY}, ${CENTER_X - 110} ${CENTER_Y}, ${CENTER_X - 84} ${CENTER_Y}`}
-                stroke="rgba(242,160,58,0.42)"
-                strokeWidth="1.3"
+                stroke="rgba(242,160,58,0.65)"
+                strokeWidth="1.7"
                 className="diagram-flow"
               />
             );
@@ -88,22 +88,22 @@ const SystemDiagram = ({ inputItems, outputItems, centerLabel, title, subtitleLi
               <path
                 key={`ol-${i}`}
                 d={`M ${CENTER_X + 84} ${CENTER_Y} C ${CENTER_X + 110} ${CENTER_Y}, ${WIDTH - 240} ${endY}, ${WIDTH - 210} ${endY}`}
-                stroke="rgba(242,160,58,0.42)"
-                strokeWidth="1.3"
+                stroke="rgba(242,160,58,0.65)"
+                strokeWidth="1.7"
                 className="diagram-flow"
               />
             );
           })}
 
           {/* Center engine node */}
-          <g>
+          <g filter="url(#centerShadow)">
             <rect
               x={CENTER_X - 84}
               y={CENTER_Y - 56}
               width="168"
               height="112"
               rx="14"
-              fill="#0B0F14"
+              fill="rgba(250,250,247,1)"
               stroke="#F2A03A"
               strokeWidth="1.6"
             />
@@ -119,7 +119,7 @@ const SystemDiagram = ({ inputItems, outputItems, centerLabel, title, subtitleLi
               x={CENTER_X}
               y={CENTER_Y - 16}
               textAnchor="middle"
-              fill="white"
+              fill="#0B0F14"
               fontFamily="Cabinet Grotesk, DM Sans, sans-serif"
               fontWeight="800"
               fontSize="22"
@@ -149,9 +149,12 @@ const SystemDiagram = ({ inputItems, outputItems, centerLabel, title, subtitleLi
 
           <defs>
             <linearGradient id="centerGlow" x1="0" x2="0" y1="0" y2="1">
-              <stop offset="0%" stopColor="rgba(242,160,58,0.12)" />
-              <stop offset="100%" stopColor="rgba(242,160,58,0)" />
+              <stop offset="0%" stopColor="rgba(242,160,58,0.10)" />
+              <stop offset="100%" stopColor="rgba(242,160,58,0.03)" />
             </linearGradient>
+            <filter id="centerShadow" x="-25%" y="-25%" width="150%" height="150%">
+              <feDropShadow dx="0" dy="3" stdDeviation="8" floodColor="rgba(0,0,0,0.07)" />
+            </filter>
           </defs>
         </svg>
 

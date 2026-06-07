@@ -16,7 +16,7 @@ export const translations = {
       eyebrow: "For growing businesses",
       headline: "We help growing businesses remove operational chaos",
       subheadline:
-        "Lost leads, manual spreadsheets, unanswered customer emails, scattered supplier data, numbers nobody can find — we build simple systems to fix the part that hurts most.",
+        "Lost leads, manual spreadsheets, unanswered emails, scattered supplier data, unclear numbers — we build simple systems that fix the part that slows your business down.",
       ctaPrimary: "Let's discuss your process",
       ctaSecondary: "See what we build",
       diagramTitle: "We connect your scattered tools into one working process.",
@@ -118,7 +118,7 @@ export const translations = {
       eyebrow: "What we build",
       headline: "Start with one process",
       lead:
-        "Each system is built around your tools, your team, and the real problem. Start with one, expand when ready.",
+        "Each system is built around your tools, your team, and one real problem. Start with one process — expand only when it makes sense.",
       problemLabel: "Problem",
       gotLabel: "What you get",
       connectsLabel: "Connects to",
@@ -279,7 +279,7 @@ export const translations = {
             "Built to reduce manual product entry and make product creation faster and more consistent.",
         },
         {
-          label: "pilot",
+          label: "real",
           title: "Language school customer assistant",
           problem:
             "Visitors need quick answers about study options and consultations, while the team needs better lead capture and insight into repeated questions.",
@@ -487,7 +487,7 @@ export const translations = {
       eyebrow: "Pro rostoucí firmy",
       headline: "Pomáháme rostoucím firmám dostat chaos pod kontrolu",
       subheadline:
-        "Ztracené poptávky, ruční tabulky, hromady e-mailů od zákazníků, chaos u dodavatelů, čísla, která nikdo nevidí — stavíme jednoduché systémy kolem procesů, které nejvíc bolí.",
+        "Ztracené poptávky, ruční tabulky, nevyřízené e-maily, chaos u dodavatelů, čísla, která nikdo nevidí — stavíme jednoduché systémy, které opraví to, co vaši firmu nejvíc brzdí.",
       ctaPrimary: "Promluvme si o vašem procesu",
       ctaSecondary: "Naše systémy",
       diagramTitle: "Spojíme vaše roztříštěné nástroje do jednoho funkčního procesu.",
@@ -589,7 +589,7 @@ export const translations = {
       eyebrow: "Co stavíme",
       headline: "Začněte jedním procesem",
       lead:
-        "Každý systém stavíme kolem vašich nástrojů, vašeho týmu a skutečného problému. Začněte jedním, rozšiřujte, když budete připraveni.",
+        "Každý systém stavíme kolem vašich nástrojů, vašeho týmu a jednoho skutečného problému. Začněte jedním procesem — rozšiřujte, až to bude dávat smysl.",
       problemLabel: "Problém",
       gotLabel: "Co dostanete",
       connectsLabel: "Napojení na",
@@ -750,7 +750,7 @@ export const translations = {
             "Postaveno tak, aby snížilo manuální zadávání produktů a zrychlilo a zkonzistentnilo jejich tvorbu.",
         },
         {
-          label: "pilot",
+          label: "real",
           title: "Zákaznický asistent pro jazykovou školu",
           problem:
             "Návštěvníci potřebují rychlé odpovědi o studiu a konzultacích, tým chce lepší sběr leadů a přehled o opakovaných dotazech.",
