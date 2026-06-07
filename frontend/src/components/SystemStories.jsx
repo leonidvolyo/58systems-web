@@ -14,7 +14,7 @@ const SystemStories = () => {
     <section
       id="stories"
       data-testid="stories-section"
-      className="relative py-20 lg:py-28 bg-paper-pure text-ink border-t border-paper-line"
+      className="relative py-20 lg:py-28 bg-paper-pure text-ink border-t border-ink/[0.07]"
     >
       <div className="max-w-container mx-auto px-6 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-10 mb-12 lg:mb-16">

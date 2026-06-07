@@ -13,7 +13,7 @@ import ProcessAnalysisCTA from "./components/ProcessAnalysisCTA";
 import Footer from "./components/Footer";
 
 const Home = () => (
-  <div className="min-h-screen bg-ink text-white" data-testid="home-page">
+  <div className="min-h-screen bg-paper text-ink" data-testid="home-page">
     <Header />
     <main>
       <Hero />

@@ -6,98 +6,98 @@ export const translations = {
   en: {
     nav: {
       systems: "Products",
-      cases: "System stories",
+      cases: "Work examples",
       process: "Process",
       analysis: "Free analysis",
       contact: "Contact",
-      cta: "Book process analysis",
+      cta: "Let's talk",
     },
     hero: {
-      eyebrow: "Automation studio for SMBs",
-      headline: "Business automation systems for growing SMBs",
+      eyebrow: "For growing businesses",
+      headline: "We help growing businesses remove operational chaos",
       subheadline:
-        "58 Systems helps companies reduce manual work, connect tools, and build stable automation across sales, support, e-commerce and back-office operations — without AI hype or fragile one-off hacks.",
-      ctaPrimary: "Book process analysis",
-      ctaSecondary: "See systems we build",
-      diagramTitle: "We connect your messy tools into one working process.",
+        "58 Systems helps companies reduce manual work, connect their tools, and organize processes across sales, support and back-office — without buzzwords or fragile workarounds.",
+      ctaPrimary: "Let's discuss your process",
+      ctaSecondary: "See what we build",
+      diagramTitle: "We connect your scattered tools into one working process.",
       diagramInputs: "Inputs",
       diagramCenter: "58 Systems",
       diagramOutputs: "Outputs",
       diagramInputItems: ["Web forms", "Email", "CRM", "Sheets", "E-commerce", "Support"],
       diagramOutputItems: ["CRM update", "Sales alert", "Follow-up", "Dashboard", "Report", "Customer reply"],
-      engineSubtitle: ["automate", "orchestrate", "support"],
+      engineSubtitle: ["organize", "connect", "automate"],
     },
     trust: {
       items: [
-        "Stable systems, not demos",
+        "Real systems, not demos",
         "AI only where it makes sense",
-        "Integrated into your workflow",
-        "Built with engineering discipline",
+        "Works with your existing tools",
+        "Built to work, not just to impress",
       ],
     },
     problems: {
-      eyebrow: "The problem",
-      headline: "Growth creates chaos when processes stay manual",
+      eyebrow: "Where things break down",
+      headline: "When the business grows, the chaos grows with it",
       cards: [
         {
           title: "Leads get lost",
           body:
-            "Incoming requests arrive from forms, email, chat or calls, but response is slow and follow-ups are missed.",
+            "Requests arrive from website forms, emails, calls or WhatsApp. But replies are slow, follow-ups get missed, and nobody knows whether someone responded.",
         },
         {
-          title: "Tools do not talk to each other",
+          title: "People spend their day copying data",
           body:
-            "CRM, spreadsheets, email, website and support tools each contain pieces of the same process.",
+            "Your team recopies information between tools, updates spreadsheets by hand, and sends the same message from five different places.",
         },
         {
-          title: "People copy-paste instead of selling or serving",
+          title: "Customer questions pile up",
           body:
-            "Employees waste time moving data, rewriting messages, checking statuses and updating sheets.",
+            "The same questions come in every day. Email threads get buried. Replies take too long. Everyone is busy, but customers are waiting.",
         },
         {
-          title: "Managers lack visibility",
+          title: "You're running the business on guesswork",
           body:
-            "The work is happening, but nobody has a clear view of bottlenecks, response times, lost opportunities or workload.",
+            "Data exists but it's scattered across spreadsheets, CRM and inboxes. Nobody has a clear view of what's working, what's slow, or what's getting missed.",
         },
       ],
     },
     values: {
-      eyebrow: "Core value",
-      headline: "Automation built for real business processes",
+      eyebrow: "How we work",
+      headline: "We organize the process before we touch any tools",
       lead:
-        "58 Systems does not build AI toys or isolated no-code hacks. We design automation that fits how your company already works — with clear ownership, integrations, logs, fallbacks and long-term maintainability.",
+        "58 Systems does not build AI toys or quick hacks. We learn how your company actually works, then build automation around it — transparent, reliable, and made for real people to use every day.",
       pillars: [
         {
           tag: "01",
-          title: "Systematic",
+          title: "Process first, tools second",
           body:
-            "We map the full workflow before building, so the solution supports the real process — not just one isolated task.",
+            "We map the full workflow before writing a single line of code, so the solution supports the real process — not just one isolated task.",
         },
         {
           tag: "02",
-          title: "Integrated",
+          title: "Works with what you already have",
           body:
-            "We connect your existing tools instead of forcing your team to work in another disconnected place.",
+            "We connect tools your team already uses. No new platforms to learn, no second inbox to check.",
         },
         {
           tag: "03",
-          title: "Stable",
+          title: "Reliable by design",
           body:
-            "We build with testing, monitoring, clear error handling and support in mind from day one.",
+            "We build with testing, monitoring and real error handling from day one — so the system works when you need it.",
         },
         {
           tag: "04",
-          title: "Cost-efficient",
+          title: "Only where it actually makes sense",
           body:
-            "We focus on automating work that actually saves time, reduces mistakes or improves response speed.",
+            "We focus on automating work that saves real time, reduces mistakes or speeds up your response to customers.",
         },
       ],
     },
     products: {
-      eyebrow: "Systems we build",
-      headline: "Systems you can start with",
+      eyebrow: "What we build",
+      headline: "Start with one process",
       lead:
-        "Each system is adapted to your tools, team and workflow. Start with one painful process, then expand.",
+        "Each system is built around your tools, your team, and the real problem. Start with one, expand when ready.",
       problemLabel: "Problem",
       gotLabel: "What you get",
       connectsLabel: "Connects to",
@@ -204,10 +204,10 @@ export const translations = {
       ],
     },
     stories: {
-      eyebrow: "System stories",
-      headline: "Examples of automation connected to a real business process",
+      eyebrow: "Real work",
+      headline: "Examples from projects we've worked on",
       lead:
-        "Honest snapshots of systems we have designed and built. We use clear labels — Real project, Pilot, Example system — and avoid fabricated metrics.",
+        "Honest descriptions of systems we've designed and built. We use clear labels — Real project, Pilot, Example system — and avoid made-up numbers.",
       labels: {
         real: "Real project",
         pilot: "Pilot",
@@ -257,7 +257,7 @@ export const translations = {
           problem:
             "Teams need to track news sources, market signals and prices across the web, but reading and summarising it manually eats hours every day.",
           system:
-            "A scheduled scraper pulls from configured RSS, news sites and price feeds. An LLM classifies, summarises and extracts entities. A small forecasting model adds short-term signals. Briefs are pushed to Telegram / WhatsApp / email and stored in a searchable history.",
+            "A scheduled job pulls from configured RSS, news sites and price feeds. AI classifies, summarises and extracts key information. A small forecasting model adds short-term signals. Briefs are pushed to Telegram / WhatsApp / email and stored in a searchable history.",
           connects: ["RSS / news sites", "Price & market feeds", "Telegram", "WhatsApp / Email", "Database"],
           result:
             "Built to replace daily manual reading with a focused 5-minute brief, with full source links and replayable history.",
@@ -287,8 +287,8 @@ export const translations = {
       ],
     },
     process: {
-      eyebrow: "How we build",
-      headline: "From process analysis to a stable working system",
+      eyebrow: "How we work",
+      headline: "From a messy process to a working system",
       steps: [
         {
           number: "01",
@@ -315,10 +315,10 @@ export const translations = {
             "We monitor real usage, fix issues, improve flows, and expand only where it makes business sense.",
         },
       ],
-      capabilitiesLabel: "Capabilities — secondary proof, not the headline",
+      capabilitiesLabel: "Technologies we use",
       capabilities: [
         { group: "Automation", items: ["Make", "Zapier", "n8n"] },
-        { group: "AI & LLMs", items: ["OpenAI", "Claude", "Gemini"] },
+        { group: "AI", items: ["OpenAI", "Claude", "Gemini"] },
         { group: "Integrations", items: ["APIs", "Webhooks", "Databases"] },
         { group: "CRM & ERP", items: ["HubSpot", "Pipedrive", "Custom systems"] },
         { group: "E-commerce", items: ["Shoptet", "Product data", "Imports"] },
@@ -329,26 +329,26 @@ export const translations = {
     },
     why: {
       eyebrow: "Why 58 Systems",
-      headline: "Why not just use a no-code tool or an AI chatbot?",
+      headline: "Why can't you just use a no-code tool or an AI chatbot?",
       lead:
-        "Many automation projects fail because they automate one task without understanding the full process. 58 Systems starts from the workflow, then chooses the right tools.",
+        "Many automation projects fail because they automate one task without understanding how the business actually works. We start from the process.",
       pillars: [
         {
-          title: "Business process first",
-          body: "We understand the workflow before choosing technology.",
+          title: "Process before technology",
+          body: "We understand the workflow before recommending any solution.",
         },
         {
           title: "AI only where it helps",
           body:
-            "We use AI for classification, drafting, summarization, extraction and assistance — not as a gimmick.",
+            "We use AI for classification, drafting, summarizing, extraction and assistance — not as a gimmick.",
         },
         {
-          title: "Integrated by design",
-          body: "The system fits into your CRM, email, sheets, website or existing tools.",
+          title: "Built around your tools",
+          body: "The system fits into your CRM, email, sheets, website or the tools your team already knows.",
         },
         {
-          title: "Built to last",
-          body: "We care about logs, errors, maintainability, documentation and support.",
+          title: "Reliable, not just a demo",
+          body: "We care about logs, alerts, documentation and support from day one.",
         },
         {
           title: "Human control",
@@ -357,15 +357,15 @@ export const translations = {
         {
           title: "Clear economics",
           body:
-            "We focus on processes where saved time, fewer errors or faster response justify the implementation.",
+            "We focus on processes where saved time, fewer errors or faster response justify the work.",
         },
       ],
     },
     cta: {
       eyebrow: "Next step",
-      headline: "Start with one process analysis",
+      headline: "Start with one process",
       lead:
-        "You do not need to know what to automate. Show us where work is slow, repetitive or unclear — we will map the process and suggest the simplest useful system.",
+        "You don't need to know what to automate. Show us where work is slow, repetitive or unclear — we'll map the process and suggest the simplest useful first step.",
       deliverablesLabel: "What you get",
       deliverables: [
         "Workflow map",
@@ -388,8 +388,8 @@ export const translations = {
         { id: "other", label: "Something else", prefill: "" },
       ],
       form: {
-        title: "Get your analysis for free",
-        subtitle: "Plus a 10% discount on your first automation.",
+        title: "Let's talk about your process",
+        subtitle: "Analysis is free. Includes a 10% discount on the first implementation.",
         name: "Your name",
         email: "Email",
         company: "Company",
@@ -401,7 +401,7 @@ export const translations = {
           { value: "cs", label: "Čeština" },
           { value: "ru", label: "Русский" },
         ],
-        submit: "Book free analysis + discount",
+        submit: "Send your request",
         submitting: "Sending…",
         success: "Thanks — we received your request and will reply within 1 business day.",
         error: "Something went wrong. Please try again or email info@58systems.com.",
@@ -411,12 +411,12 @@ export const translations = {
     },
     footer: {
       tagline:
-        "Business automation systems for SMBs. Practical automation, AI where it makes sense, and stable integrations for real workflows.",
+        "Business systems for growing companies. Practical automation, clear processes, and tools that work together.",
       navTitle: "Navigation",
       contactTitle: "Contact",
       links: [
         { label: "Products", href: "#systems" },
-        { label: "System stories", href: "#stories" },
+        { label: "Work examples", href: "#stories" },
         { label: "Process", href: "#process" },
         { label: "Free analysis", href: "#analysis" },
         { label: "Contact", href: "#analysis" },
@@ -427,18 +427,18 @@ export const translations = {
   cs: {
     nav: {
       systems: "Produkty",
-      cases: "Příběhy systémů",
+      cases: "Ukázky práce",
       process: "Proces",
       analysis: "Bezplatná analýza",
       contact: "Kontakt",
-      cta: "Objednat procesní analýzu",
+      cta: "Promluvme si",
     },
     hero: {
-      eyebrow: "Automatizační studio pro SMB",
-      headline: "Automatizační systémy pro rostoucí firmy",
+      eyebrow: "Pro rostoucí firmy",
+      headline: "Pomáháme rostoucím firmám dostat chaos pod kontrolu",
       subheadline:
-        "58 Systems pomáhá firmám snižovat manuální práci, propojovat nástroje a stavět stabilní automatizace v obchodu, podpoře, e-commerce a back-office — bez AI marketingu a křehkých jednorázových řešení.",
-      ctaPrimary: "Objednat procesní analýzu",
+        "58 Systems pomáhá firmám zbavit se manuální práce, propojit nástroje a zavést pořádek v procesech obchodu, zákaznické péče a provozu — bez technologického žargonu a řešení, která přestanou fungovat za měsíc.",
+      ctaPrimary: "Promluvme si o vašem procesu",
       ctaSecondary: "Naše systémy",
       diagramTitle: "Spojíme vaše roztříštěné nástroje do jednoho funkčního procesu.",
       diagramInputs: "Vstupy",
@@ -446,79 +446,79 @@ export const translations = {
       diagramOutputs: "Výstupy",
       diagramInputItems: ["Web formuláře", "E-mail", "CRM", "Tabulky", "E-commerce", "Podpora"],
       diagramOutputItems: ["Aktualizace CRM", "Notifikace pro obchod", "Follow-up", "Dashboard", "Report", "Odpověď zákazníkovi"],
-      engineSubtitle: ["automatizace", "orchestrace", "podpora"],
+      engineSubtitle: ["organizace", "propojení", "automatizace"],
     },
     trust: {
       items: [
-        "Stabilní systémy, ne dema",
+        "Skutečné systémy, ne ukázky",
         "AI jen tam, kde dává smysl",
-        "Integrované do vašeho workflow",
-        "Postavené s inženýrskou disciplínou",
+        "Funguje s nástroji, které už máte",
+        "Postavené na to, aby skutečně fungovalo",
       ],
     },
     problems: {
-      eyebrow: "Problém",
-      headline: "Růst přináší chaos, když procesy zůstávají manuální",
+      eyebrow: "Kde věci skřípou",
+      headline: "Čím víc firma roste, tím víc věcí vypadá mezi prsty",
       cards: [
         {
           title: "Leady se ztrácejí",
           body:
-            "Poptávky chodí z formulářů, e-mailu, chatu i telefonů, ale reakce je pomalá a follow-up nekonzistentní.",
+            "Poptávky chodí z formulářů, e-mailů, telefonů i WhatsAppu. Odpovědi jsou pomalé, follow-up se nehlídá a nikdo neví, jestli vůbec někdo zareagoval.",
         },
         {
-          title: "Nástroje spolu nemluví",
+          title: "Lidé tráví den přepisováním dat",
           body:
-            "CRM, tabulky, e-mail, web a podpora — každý nástroj drží jen kus stejného procesu.",
+            "Informace se ručně přepisují mezi nástroji, tabulky se aktualizují ručně a stejná zpráva se odesílá z pěti různých míst.",
         },
         {
-          title: "Lidé místo prodeje a péče přepisují data",
+          title: "Zákazníci čekají na odpovědi",
           body:
-            "Tým ztrácí čas přesouváním dat, opisováním zpráv, kontrolou statusů a aktualizací tabulek.",
+            "Stejné dotazy chodí každý den. E-mailová vlákna se hromadí. Odpovědi přicházejí pozdě. Každý je zaneprázdněný, ale zákazníci čekají.",
         },
         {
-          title: "Management nevidí, co se děje",
+          title: "Firma se řídí odhadem, ne daty",
           body:
-            "Práce se sice odvádí, ale nikdo nemá jasný přehled o úzkých místech, časech reakcí, ztracených příležitostech ani vytížení.",
+            "Data existují, ale jsou roztroušená v tabulkách, CRM a e-mailech. Nikdo nemá jasný přehled, co funguje, kde jsou zpoždění a co se ztrácí.",
         },
       ],
     },
     values: {
-      eyebrow: "Jak to děláme",
-      headline: "Automatizace navržená pro reálné firemní procesy",
+      eyebrow: "Jak pracujeme",
+      headline: "Nejdřív zmapujeme proces, pak sáhneme na nástroje",
       lead:
-        "58 Systems nestavíme AI hračky ani izolované no-code hacky. Navrhujeme automatizace, které sedí na to, jak firma reálně funguje — s jasnou odpovědností, integracemi, logy, fallbacky a dlouhodobou udržovatelností.",
+        "58 Systems nestavíme AI hračky ani rychlé záplaty. Naučíme se, jak vaše firma reálně funguje, a pak postavíme automatizaci kolem toho — srozumitelnou, spolehlivou a takovou, aby ji lidé skutečně používali každý den.",
       pillars: [
         {
           tag: "01",
-          title: "Systematicky",
+          title: "Nejdřív proces, pak nástroj",
           body:
-            "Než stavíme, zmapujeme celý workflow. Řešení tak podporuje skutečný proces, ne jen jednu izolovanou úlohu.",
+            "Než začneme stavět, zmapujeme celý průběh. Řešení pak sedí na skutečný proces, ne jen na jednu izolovanou část.",
         },
         {
           tag: "02",
-          title: "Integrovaně",
+          title: "Pracujeme s tím, co máte",
           body:
-            "Napojíme se na nástroje, které už používáte. Nenutíme tým pracovat v dalším odpojeném prostředí.",
+            "Napojíme se na nástroje, které váš tým už používá. Žádné nové platformy, žádná druhá schránka na hlídání.",
         },
         {
           tag: "03",
-          title: "Stabilně",
+          title: "Spolehlivé od prvního dne",
           body:
-            "Stavíme s testováním, monitoringem, jasnou obsluhou chyb a podporou — od prvního dne.",
+            "Stavíme s testováním, monitoringem a řádnou obsluhou chyb od začátku — aby systém fungoval, když ho potřebujete.",
         },
         {
           tag: "04",
-          title: "Ekonomicky",
+          title: "Jen tam, kde to má smysl",
           body:
-            "Automatizujeme práci, která reálně šetří čas, snižuje chyby nebo zrychluje reakci.",
+            "Automatizujeme práci, která reálně šetří čas, snižuje chyby nebo zrychluje odpověď zákazníkům.",
         },
       ],
     },
     products: {
       eyebrow: "Co stavíme",
-      headline: "Systémy, kterými můžete začít",
+      headline: "Začněte jedním procesem",
       lead:
-        "Každý systém přizpůsobíme vašim nástrojům, týmu a procesu. Začněte jedním bolestivým procesem a postupně rozšiřujte.",
+        "Každý systém stavíme kolem vašich nástrojů, vašeho týmu a skutečného problému. Začněte jedním, rozšiřujte, když budete připraveni.",
       problemLabel: "Problém",
       gotLabel: "Co dostanete",
       connectsLabel: "Napojení na",
@@ -625,10 +625,10 @@ export const translations = {
       ],
     },
     stories: {
-      eyebrow: "Příběhy systémů",
-      headline: "Příklady automatizace napojené na reálný proces",
+      eyebrow: "Ukázky práce",
+      headline: "Příklady ze skutečných projektů",
       lead:
-        "Poctivé ukázky systémů, které jsme navrhli a postavili. Používáme jasné štítky — Reálný projekt, Pilot, Příkladový systém — a vyhýbáme se vymyšleným číslům.",
+        "Poctivé popisy systémů, které jsme navrhli a postavili. Každý vychází z reálného problému. Používáme jasné štítky a vyhýbáme se vymyšleným číslům.",
       labels: {
         real: "Reálný projekt",
         pilot: "Pilot",
@@ -678,7 +678,7 @@ export const translations = {
           problem:
             "Týmy musí sledovat zpravodajské zdroje, tržní signály a ceny napříč webem, ale ruční čtení a sumarizace zabírá hodiny denně.",
           system:
-            "Naplánovaný scraper stahuje data z RSS, news webů a cenových zdrojů. LLM klasifikuje, sumarizuje a extrahuje entity. Malý prediktivní model přidá krátkodobé signály. Souhrny chodí na Telegram / WhatsApp / e-mail a ukládají se do prohledávatelné historie.",
+            "Naplánovaná úloha stahuje data z RSS, zpravodajských webů a cenových zdrojů. AI klasifikuje, sumarizuje a extrahuje klíčové informace. Malý prediktivní model přidá krátkodobé signály. Souhrny chodí na Telegram / WhatsApp / e-mail a ukládají se do prohledávatelné historie.",
           connects: ["RSS / zpravodajské weby", "Cenové a tržní feedy", "Telegram", "WhatsApp / E-mail", "Databáze"],
           result:
             "Postaveno tak, aby nahradilo denní ruční čtení 5minutovým souhrnem s odkazy na zdroje a historií.",
@@ -700,7 +700,7 @@ export const translations = {
           problem:
             "EU dovozci musí na vyžádání produkovat CBAM-ready reporty CO₂, ale zdrojová data jsou roztroušená v ERP, dokladech od dodavatelů a tabulkách.",
           system:
-            "Job na vyžádání stáhne data o produktech, dodavatelích a zásilkách z ERP klienta, aplikuje CBAM metodiku emisí, vygeneruje oficiální report a uloží každou transformaci pro audit. Volitelný model předpovídá potřebu kreditů.",
+            "Úloha na vyžádání stáhne data o produktech, dodavatelích a zásilkách z ERP klienta, aplikuje CBAM metodiku emisí, vygeneruje oficiální report a uloží každou transformaci pro audit. Volitelný model předpovídá potřebu kreditů.",
           connects: ["ERP klienta", "Dokumenty dodavatelů", "Interní CBAM databáze", "Exportní formát regulátora"],
           result:
             "Postaveno tak, aby regulační CBAM report šel kdykoliv znovu vygenerovat s plnou transparencí a audit trailem.",
@@ -708,8 +708,8 @@ export const translations = {
       ],
     },
     process: {
-      eyebrow: "Jak stavíme",
-      headline: "Od procesní analýzy k stabilnímu funkčnímu systému",
+      eyebrow: "Jak pracujeme",
+      headline: "Od rozboru procesu k funkčnímu systému",
       steps: [
         {
           number: "01",
@@ -736,10 +736,10 @@ export const translations = {
             "Sledujeme reálné používání, opravujeme problémy, vylepšujeme procesy a rozšiřujeme jen tam, kde to dává byznysový smysl.",
         },
       ],
-      capabilitiesLabel: "Technologie — sekundární důkaz, ne hlavní zpráva",
+      capabilitiesLabel: "Technologie, které používáme",
       capabilities: [
         { group: "Automatizace", items: ["Make", "Zapier", "n8n"] },
-        { group: "AI & LLM", items: ["OpenAI", "Claude", "Gemini"] },
+        { group: "AI", items: ["OpenAI", "Claude", "Gemini"] },
         { group: "Integrace", items: ["API", "Webhooks", "Databáze"] },
         { group: "CRM & ERP", items: ["HubSpot", "Pipedrive", "Custom systémy"] },
         { group: "E-commerce", items: ["Shoptet", "Produktová data", "Importy"] },
@@ -752,11 +752,11 @@ export const translations = {
       eyebrow: "Proč 58 Systems",
       headline: "Proč nestačí jenom no-code nástroj nebo AI chatbot?",
       lead:
-        "Spousta automatizací selhává, protože automatizují jednu úlohu, aniž by chápaly celý proces. 58 Systems začínáme od workflow a teprve potom vybíráme nástroje.",
+        "Spousta automatizací selže, protože automatizuje jednu úlohu bez porozumění tomu, jak firma reálně funguje. My začínáme od procesu.",
       pillars: [
         {
-          title: "Nejdřív proces",
-          body: "Než vybereme technologii, rozumíme workflow.",
+          title: "Nejdřív proces, pak technologie",
+          body: "Než doporučíme jakékoli řešení, rozumíme workflow.",
         },
         {
           title: "AI jen tam, kde pomáhá",
@@ -764,12 +764,12 @@ export const translations = {
             "AI používáme na klasifikaci, drafty, shrnutí, extrakci a asistenci — ne jako efekt.",
         },
         {
-          title: "Integrované od začátku",
-          body: "Systém zapadne do vašeho CRM, e-mailu, tabulek, webu a stávajících nástrojů.",
+          title: "Kolem nástrojů, které už máte",
+          body: "Systém zapadne do vašeho CRM, e-mailu, tabulek, webu a nástrojů, které váš tým zná.",
         },
         {
-          title: "Postavené na delší dobu",
-          body: "Záleží nám na lozích, chybách, udržovatelnosti, dokumentaci a podpoře.",
+          title: "Spolehlivé, ne jenom demo",
+          body: "Záleží nám na lozích, upozorněních, dokumentaci a podpoře od prvního dne.",
         },
         {
           title: "Kontrolu má člověk",
@@ -778,15 +778,15 @@ export const translations = {
         {
           title: "Jasná ekonomika",
           body:
-            "Soustředíme se na procesy, kde ušetřený čas, méně chyb nebo rychlejší reakce ospravedlní implementaci.",
+            "Soustředíme se na procesy, kde ušetřený čas, méně chyb nebo rychlejší reakce ospravedlní práci.",
         },
       ],
     },
     cta: {
       eyebrow: "Další krok",
-      headline: "Začněte jednou procesní analýzou",
+      headline: "Začněte jedním procesem",
       lead:
-        "Nemusíte vědět, co automatizovat. Ukažte nám, kde je práce pomalá, repetitivní nebo nepřehledná — proces zmapujeme a navrhneme nejjednodušší užitečný systém.",
+        "Nemusíte vědět, co automatizovat. Ukažte nám, kde je práce pomalá, repetitivní nebo nepřehledná — zmapujeme to a navrhneme nejjednodušší první krok.",
       deliverablesLabel: "Co dostanete",
       deliverables: [
         "Mapa workflow",
@@ -809,8 +809,8 @@ export const translations = {
         { id: "other", label: "Něco jiného", prefill: "" },
       ],
       form: {
-        title: "Získejte analýzu zdarma",
-        subtitle: "Navíc dostanete slevu 10% na první automatizaci.",
+        title: "Promluvme si o vašem procesu",
+        subtitle: "Analýza je zdarma. Zahrnuje 10% slevu na první implementaci.",
         name: "Jméno",
         email: "E-mail",
         company: "Firma",
@@ -822,9 +822,9 @@ export const translations = {
           { value: "cs", label: "Čeština" },
           { value: "ru", label: "Русский" },
         ],
-        submit: "Objednat analýzu zdarma + slevu",
+        submit: "Odeslat poptávku",
         submitting: "Odesílání…",
-        success: "Děkujeme — poptávku jsme přijali, ozveme se do 1 pracovního dne.",
+        success: "Díky — poptávku jsme přijali a ozveme se do 1 pracovního dne.",
         error: "Něco se nepovedlo. Zkuste to prosím znovu nebo napište na info@58systems.com.",
         consent:
           "Odesláním souhlasíte s tím, že vás můžeme kontaktovat ohledně vaší poptávky. Žádný spam, žádné newslettery.",
@@ -832,12 +832,12 @@ export const translations = {
     },
     footer: {
       tagline:
-        "Automatizační systémy pro malé a střední firmy. Praktická automatizace, AI tam, kde dává smysl, a stabilní integrace pro reálné workflow.",
+        "Systémy pro rostoucí firmy. Praktická automatizace, jasné procesy a nástroje, které skutečně spolupracují.",
       navTitle: "Navigace",
       contactTitle: "Kontakt",
       links: [
         { label: "Produkty", href: "#systems" },
-        { label: "Příběhy systémů", href: "#stories" },
+        { label: "Ukázky práce", href: "#stories" },
         { label: "Proces", href: "#process" },
         { label: "Bezplatná analýza", href: "#analysis" },
         { label: "Kontakt", href: "#analysis" },

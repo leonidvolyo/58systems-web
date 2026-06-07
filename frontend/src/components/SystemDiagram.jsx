@@ -64,8 +64,8 @@ const SystemDiagram = ({ inputItems, outputItems, centerLabel, title, subtitleLi
             width={WIDTH - 1}
             height={HEIGHT - 1}
             rx="16"
-            stroke="rgba(255,255,255,0.08)"
-            fill="rgba(255,255,255,0.02)"
+            stroke="rgba(11,15,20,0.08)"
+            fill="rgba(11,15,20,0.02)"
           />
 
           {/* Connection lines: inputs -> engine */}
@@ -197,13 +197,13 @@ const SystemDiagram = ({ inputItems, outputItems, centerLabel, title, subtitleLi
       </div>
 
       {/* Mobile fallback — three vertical clusters */}
-      <div className="md:hidden border border-white/10 rounded-xl p-5 bg-white/[0.02] space-y-5">
+      <div className="md:hidden border border-ink/[0.09] rounded-xl p-5 bg-ink/[0.02] space-y-5">
         <DiagramCluster items={inputs} icons={inputIcons} />
         <div className="flex items-center justify-center">
           <ArrowRight size={18} className="text-orange" />
         </div>
         <div className="rounded-lg border border-orange/40 bg-orange/[0.06] p-4 text-center">
-          <div className="font-display text-xl text-white">{centerLabel}</div>
+          <div className="font-display text-xl text-ink">{centerLabel}</div>
           <div className="font-mono text-[10px] tracking-widest text-orange/85 uppercase mt-1 leading-relaxed">
             {subtitles.join(" · ")}
           </div>
@@ -224,7 +224,7 @@ const DiagramCluster = ({ items, icons }) => (
       return (
         <div
           key={i}
-          className="flex items-center gap-2 bg-white/[0.03] border border-white/[0.08] rounded-md px-2.5 py-2 text-[12px] text-white/85"
+          className="flex items-center gap-2 bg-ink/[0.04] border border-ink/[0.09] rounded-md px-2.5 py-2 text-[12px] text-ink/80"
         >
           <Icon size={13} className="text-orange flex-shrink-0" />
           <span className="font-medium truncate">{item}</span>

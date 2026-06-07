@@ -27,8 +27,8 @@ const Header = () => {
       data-testid="site-header"
       className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-200 ${
         scrolled
-          ? "bg-ink/85 backdrop-blur-xl border-b border-white/[0.08]"
-          : "bg-ink/40 backdrop-blur-md border-b border-transparent"
+          ? "bg-paper/92 backdrop-blur-xl border-b border-ink/[0.08]"
+          : "bg-paper/70 backdrop-blur-md border-b border-transparent"
       }`}
     >
       <div className="max-w-container mx-auto px-6 lg:px-10">
@@ -45,7 +45,7 @@ const Header = () => {
               className="h-7 lg:h-8 w-auto select-none"
               draggable="false"
             />
-            <span className="font-display text-[18px] tracking-tight text-white/95 hidden sm:inline">
+            <span className="font-display text-[18px] tracking-tight text-ink/90 hidden sm:inline">
               Systems
             </span>
           </a>
@@ -61,8 +61,8 @@ const Header = () => {
                   data-testid={`nav-${item.href.replace("#", "")}`}
                   className={
                     isAnalysis
-                      ? "relative text-[13.5px] font-medium text-orange hover:text-orange-hot transition-colors duration-150 px-3 py-1.5 rounded-md bg-orange/[0.10] ring-1 ring-orange/30 shadow-[0_0_24px_-6px_rgba(242,160,58,0.55)]"
-                      : "text-[13.5px] font-medium text-white/65 hover:text-white transition-colors duration-150"
+                      ? "relative text-[13.5px] font-medium text-orange-deep hover:text-orange transition-colors duration-150 px-3 py-1.5 rounded-md bg-orange/[0.10] ring-1 ring-orange/30 shadow-[0_0_24px_-6px_rgba(242,160,58,0.35)]"
+                      : "text-[13.5px] font-medium text-ink/55 hover:text-ink transition-colors duration-150"
                   }
                 >
                   {item.label}
@@ -72,7 +72,7 @@ const Header = () => {
           </nav>
 
           <div className="hidden lg:flex items-center gap-4">
-            <LanguageToggle variant="dark" />
+            <LanguageToggle variant="light" />
             <a
               href="#analysis"
               data-testid="header-cta"
@@ -85,7 +85,7 @@ const Header = () => {
 
           {/* Mobile toggle */}
           <button
-            className="lg:hidden p-2 -mr-2 text-white/80"
+            className="lg:hidden p-2 -mr-2 text-ink/70"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
             data-testid="mobile-menu-toggle"
@@ -96,7 +96,7 @@ const Header = () => {
 
         {open && (
           <nav
-            className="lg:hidden py-5 border-t border-white/[0.08] flex flex-col gap-1"
+            className="lg:hidden py-5 border-t border-ink/[0.08] flex flex-col gap-1"
             data-testid="mobile-menu"
           >
             {navItems.map((item) => (
@@ -104,14 +104,14 @@ const Header = () => {
                 key={item.label}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="px-2 py-2.5 text-[15px] font-medium text-white/75 hover:text-white"
+                className="px-2 py-2.5 text-[15px] font-medium text-ink/65 hover:text-ink"
                 data-testid={`mobile-nav-${item.href.replace("#", "")}`}
               >
                 {item.label}
               </a>
             ))}
             <div className="flex items-center justify-between mt-3">
-              <LanguageToggle variant="dark" />
+              <LanguageToggle variant="light" />
               <a
                 href="#analysis"
                 onClick={() => setOpen(false)}

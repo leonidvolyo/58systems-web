@@ -66,24 +66,24 @@ const ProcessAnalysisCTA = () => {
     <section
       id="analysis"
       data-testid="analysis-section"
-      className="relative py-20 lg:py-32 bg-ink overflow-hidden"
+      className="relative py-20 lg:py-32 bg-paper overflow-hidden"
     >
       <div
         className="absolute -bottom-40 -right-32 w-[560px] h-[560px] rounded-full opacity-25 blur-3xl"
         style={{ background: "radial-gradient(closest-side, rgba(242,160,58,0.45), transparent 70%)" }}
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-grid-dark opacity-30 [mask-image:linear-gradient(to_bottom,transparent,black_30%,black_75%,transparent)]" />
+      <div className="absolute inset-0 bg-grid-light opacity-30 [mask-image:linear-gradient(to_bottom,transparent,black_30%,black_75%,transparent)]" />
 
       <div className="relative max-w-container mx-auto px-6 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Left: pitch + deliverables */}
           <div className="lg:col-span-6">
             <p className="eyebrow text-orange">{t.cta.eyebrow}</p>
-            <h2 className="mt-4 font-display text-white text-4xl sm:text-5xl lg:text-[56px] leading-[1.04] tracking-[-0.025em]">
+            <h2 className="mt-4 font-display text-ink text-4xl sm:text-5xl lg:text-[56px] leading-[1.04] tracking-[-0.025em]">
               {t.cta.headline}
             </h2>
-            <p className="mt-6 text-white/72 text-[17px] leading-relaxed max-w-xl">{t.cta.lead}</p>
+            <p className="mt-6 text-ink/62 text-[17px] leading-relaxed max-w-xl">{t.cta.lead}</p>
 
             <div className="mt-9">
               <p className="font-mono text-[11px] tracking-widest text-orange uppercase mb-4">
@@ -94,7 +94,7 @@ const ProcessAnalysisCTA = () => {
                   <li
                     key={d}
                     data-testid={`deliverable-${i + 1}`}
-                    className="flex items-start gap-2.5 text-[14.5px] text-white/80"
+                    className="flex items-start gap-2.5 text-[14.5px] text-ink/75"
                   >
                     <span className="w-5 h-5 mt-0.5 flex-shrink-0 inline-flex items-center justify-center rounded-full bg-orange/15 border border-orange/40 text-orange">
                       <CheckCircle2 size={12} strokeWidth={2.4} />
@@ -126,7 +126,7 @@ const ProcessAnalysisCTA = () => {
                         className={`text-[12.5px] px-3 py-1.5 rounded-full border transition-colors duration-150 ${
                           selected
                             ? "bg-orange text-ink border-orange"
-                            : "bg-white/[0.03] text-white/75 border-white/[0.12] hover:border-orange/50 hover:text-white"
+                            : "bg-ink/[0.03] text-ink/65 border-ink/[0.14] hover:border-orange/50 hover:text-ink"
                         }`}
                       >
                         {chip.label}
@@ -137,7 +137,7 @@ const ProcessAnalysisCTA = () => {
               </div>
             )}
 
-            <div className="bg-white text-ink rounded-2xl border border-paper-line shadow-[0_30px_80px_-30px_rgba(0,0,0,0.6)] p-7 lg:p-9">
+            <div className="bg-white text-ink rounded-2xl border border-paper-line shadow-[0_30px_80px_-30px_rgba(0,0,0,0.15)] p-7 lg:p-9">
               {/* Sales-oriented title inside the form card */}
               <div className="mb-6">
                 <h3

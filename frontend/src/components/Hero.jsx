@@ -16,14 +16,14 @@ const Hero = () => {
     <section
       id="top"
       data-testid="hero-section"
-      className="relative pt-28 lg:pt-32 pb-10 lg:pb-12 bg-ink overflow-hidden"
+      className="relative pt-28 lg:pt-32 pb-10 lg:pb-12 bg-paper overflow-hidden"
     >
       {/* Grid background */}
-      <div className="absolute inset-0 bg-grid-dark opacity-[0.55] [mask-image:linear-gradient(to_bottom,black_30%,transparent_95%)]" />
+      <div className="absolute inset-0 bg-grid-light opacity-[0.55] [mask-image:linear-gradient(to_bottom,black_30%,transparent_95%)]" />
       {/* Soft amber halo */}
       <div
-        className="absolute -top-32 -left-24 w-[520px] h-[520px] rounded-full opacity-30 blur-3xl"
-        style={{ background: "radial-gradient(closest-side, rgba(242,160,58,0.35), transparent 70%)" }}
+        className="absolute -top-32 -left-24 w-[520px] h-[520px] rounded-full opacity-20 blur-3xl"
+        style={{ background: "radial-gradient(closest-side, rgba(242,160,58,0.45), transparent 70%)" }}
         aria-hidden="true"
       />
 
@@ -45,13 +45,13 @@ const Hero = () => {
               {t.hero.eyebrow}
             </p>
             <h1
-              className="mt-5 font-display text-white text-[40px] sm:text-5xl lg:text-[54px] xl:text-[60px] leading-[1.04] tracking-[-0.03em]"
+              className="mt-5 font-display text-ink text-[40px] sm:text-5xl lg:text-[54px] xl:text-[60px] leading-[1.04] tracking-[-0.03em]"
               data-testid="hero-headline"
             >
               {lead} <span className="text-orange">{tail}</span>
             </h1>
             <p
-              className="mt-6 text-[16.5px] lg:text-[18px] text-white/72 leading-relaxed max-w-xl"
+              className="mt-6 text-[16.5px] lg:text-[18px] text-ink/62 leading-relaxed max-w-xl"
               data-testid="hero-subheadline"
             >
               {t.hero.subheadline}
@@ -69,7 +69,7 @@ const Hero = () => {
               <a
                 href="#systems"
                 data-testid="hero-cta-secondary"
-                className="btn-ghost-dark inline-flex items-center gap-2 px-5 py-3.5 rounded-md text-[14.5px]"
+                className="btn-ghost-light inline-flex items-center gap-2 px-5 py-3.5 rounded-md text-[14.5px]"
               >
                 {t.hero.ctaSecondary}
               </a>
@@ -82,7 +82,7 @@ const Hero = () => {
                 so its bottom matches the buttons bottom in any language === */}
           <div className="mt-12 lg:mt-0 lg:col-span-7 lg:row-start-1 lg:order-2 lg:flex lg:flex-col lg:justify-end">
             <div className="relative">
-              <p className="hidden lg:block absolute -top-9 right-0 text-[12px] text-white/45 max-w-xs text-right">
+              <p className="hidden lg:block absolute -top-9 right-0 text-[12px] text-ink/40 max-w-xs text-right">
                 {t.hero.diagramTitle}
               </p>
               <SystemDiagram
@@ -92,7 +92,7 @@ const Hero = () => {
                 subtitleLines={t.hero.engineSubtitle}
                 title={t.hero.diagramTitle}
               />
-              <p className="lg:hidden mt-3 text-[12.5px] text-white/55 text-center">
+              <p className="lg:hidden mt-3 text-[12.5px] text-ink/45 text-center">
                 {t.hero.diagramTitle}
               </p>
             </div>
