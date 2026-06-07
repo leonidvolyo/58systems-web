@@ -131,12 +131,12 @@ const SystemDiagram = ({ inputItems, outputItems, centerLabel, title, subtitleLi
               <text
                 key={`st-${i}`}
                 x={CENTER_X}
-                y={CENTER_Y + 12 + i * 14}
+                y={CENTER_Y + 14 + i * 15}
                 textAnchor="middle"
                 fill="rgba(242,160,58,0.95)"
                 fontFamily="JetBrains Mono, monospace"
-                fontSize="11.5"
-                letterSpacing="1.6"
+                fontSize="13"
+                letterSpacing="1.2"
               >
                 {line}
               </text>
@@ -207,7 +207,7 @@ const SystemDiagram = ({ inputItems, outputItems, centerLabel, title, subtitleLi
         </div>
         <div className="rounded-lg border border-orange/40 bg-orange/[0.06] p-4 text-center">
           <div className="font-display text-xl text-ink">{centerLabel}</div>
-          <div className="font-mono text-[10px] tracking-widest text-orange/85 uppercase mt-1 leading-relaxed">
+          <div className="font-mono text-[12px] tracking-wide text-orange/85 uppercase mt-1 leading-relaxed">
             {subtitles.join(" · ")}
           </div>
         </div>
