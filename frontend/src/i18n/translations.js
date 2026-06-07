@@ -16,7 +16,7 @@ export const translations = {
       eyebrow: "For growing businesses",
       headline: "We help growing businesses remove operational chaos",
       subheadline:
-        "58 Systems helps companies reduce manual work, connect their tools, and organize processes across sales, support and back-office — without buzzwords or fragile workarounds.",
+        "Lost leads, manual spreadsheets, unanswered customer emails, scattered supplier data, numbers nobody can find — we build simple systems to fix the part that hurts most.",
       ctaPrimary: "Let's discuss your process",
       ctaSecondary: "See what we build",
       diagramTitle: "We connect your scattered tools into one working process.",
@@ -40,24 +40,29 @@ export const translations = {
       headline: "When the business grows, the chaos grows with it",
       cards: [
         {
-          title: "Leads get lost",
+          title: "Lost leads and slow replies",
           body:
-            "Requests arrive from website forms, emails, calls or WhatsApp. But replies are slow, follow-ups get missed, and nobody knows whether someone responded.",
+            "Requests arrive from website forms, emails, calls or WhatsApp. Replies are slow, follow-ups get missed, and nobody knows who responded — or whether anyone did.",
         },
         {
-          title: "People spend their day copying data",
+          title: "Too much manual work",
           body:
-            "Your team recopies information between tools, updates spreadsheets by hand, and sends the same message from five different places.",
+            "Your team copies data between tools, updates spreadsheets by hand, and sends the same message from five different places. Admin work eats the day.",
         },
         {
           title: "Customer questions pile up",
           body:
-            "The same questions come in every day. Email threads get buried. Replies take too long. Everyone is busy, but customers are waiting.",
+            "The same questions come in every day. Emails pile up. Replies take too long. Everyone is busy, but customers are left waiting.",
         },
         {
-          title: "You're running the business on guesswork",
+          title: "Supplier and ordering chaos",
           body:
-            "Data exists but it's scattered across spreadsheets, CRM and inboxes. Nobody has a clear view of what's working, what's slow, or what's getting missed.",
+            "Supplier emails, quotes, orders and approvals sit in different inboxes. Nobody has a central view of what was sent, agreed or still pending.",
+        },
+        {
+          title: "No visibility into what is happening",
+          body:
+            "Data exists but it is scattered across spreadsheets, CRM and inboxes. Nobody has a clear view of what is working, what is slow, or what is getting missed.",
         },
       ],
     },
@@ -83,7 +88,7 @@ export const translations = {
           tag: "03",
           title: "Reliable by design",
           body:
-            "We build with testing, monitoring and real error handling from day one — so the system works when you need it.",
+            "We build things that actually work when you need them — not just during the demo, but every day after.",
         },
         {
           tag: "04",
@@ -91,6 +96,22 @@ export const translations = {
           body:
             "We focus on automating work that saves real time, reduces mistakes or speeds up your response to customers.",
         },
+      ],
+    },
+    claude: {
+      eyebrow: "AI & Claude",
+      headline: "Want to use Claude or AI inside your business?",
+      lead:
+        "Claude alone is useful. Claude connected to your CRM, email, documents and existing workflows is much more useful. 58 Systems connects AI tools to the processes where they actually help — so your team gets better output without managing another tool.",
+      note: "AI should assist your team, not create another black box.",
+      useCasesLabel: "What AI helps with",
+      useCases: [
+        { title: "Draft replies", body: "From CRM context, email history or customer data." },
+        { title: "Summarize communication", body: "Long threads, call notes or support tickets — turned into a brief." },
+        { title: "Search internal documents", body: "Find answers across manuals, SOPs, policies and knowledge bases." },
+        { title: "Prepare follow-ups", body: "Suggested next steps based on CRM history and open items." },
+        { title: "Classify incoming requests", body: "Route tickets, leads or emails by type or priority — automatically." },
+        { title: "Extract data from documents", body: "Invoices, orders, forms, PDFs — structured into your systems." },
       ],
     },
     products: {
@@ -124,7 +145,7 @@ export const translations = {
           number: "02",
           title: "AI Sales Assistant",
           problem:
-            "Sales people spend too much time on repetitive replies, notes, research and reminders.",
+            "Sales people spend too much time on repetitive replies, notes and reminders instead of closing deals.",
           gets: [
             "Suggested first replies",
             "Follow-up drafts",
@@ -135,7 +156,7 @@ export const translations = {
           ],
           connects: ["CRM", "Email", "Calendar", "Website forms", "Internal docs"],
           outcome:
-            "Sales spends more time closing and less on admin. AI assists; humans decide.",
+            "Sales spends more time closing and less on admin. AI drafts and prepares; humans decide.",
         },
         {
           number: "03",
@@ -172,6 +193,23 @@ export const translations = {
         },
         {
           number: "05",
+          title: "Supplier & Procurement Workflow",
+          problem:
+            "Supplier emails, quotes, orders, approvals and product data are scattered across inboxes, spreadsheets and people.",
+          gets: [
+            "Supplier email tracking",
+            "Quote / RFQ collection",
+            "Order tracking and status",
+            "Approval workflows",
+            "Product and supplier data",
+            "Reminders and follow-ups",
+            "Simple reporting",
+          ],
+          connects: ["Email", "Spreadsheets", "Supplier portals", "ERP / inventory", "Slack / Teams", "CRM"],
+          outcome: "Clearer supplier communication, fewer missed orders, faster comparison and less manual chasing.",
+        },
+        {
+          number: "06",
           title: "Internal Operations Automation",
           problem:
             "Approvals, reminders, documents and admin tasks are scattered across people and tools.",
@@ -187,10 +225,10 @@ export const translations = {
           outcome: "Fewer delays, fewer missed tasks, clearer responsibility.",
         },
         {
-          number: "06",
-          title: "Reporting & KPI Dashboard",
+          number: "07",
+          title: "Reporting & Visibility Dashboard",
           problem:
-            "The data exists, but business owners and managers do not see what is really happening.",
+            "The data exists, but business owners and managers cannot see what is really happening.",
           gets: [
             "Automated daily / weekly reports",
             "KPI dashboard",
@@ -205,9 +243,9 @@ export const translations = {
     },
     stories: {
       eyebrow: "Real work",
-      headline: "Examples from projects we've worked on",
+      headline: "Examples from projects we have worked on",
       lead:
-        "Honest descriptions of systems we've designed and built. We use clear labels — Real project, Pilot, Example system — and avoid made-up numbers.",
+        "Honest descriptions of systems we have designed and built. Each one has a real business problem behind it.",
       labels: {
         real: "Real project",
         pilot: "Pilot",
@@ -216,18 +254,18 @@ export const translations = {
       problemLabel: "Problem",
       systemLabel: "System",
       connectsLabel: "What it connects",
-      resultLabel: "Designed outcome",
+      resultLabel: "Outcome",
       items: [
         {
-          label: "pilot",
-          title: "Language school chatbot",
+          label: "example",
+          title: "CRM + lead flow automation",
           problem:
-            "Visitors need quick answers about study options, articles and consultations, while the team needs better lead capture and insight into repeated questions.",
+            "Leads arrive from different channels and depend on manual follow-up. Things get missed.",
           system:
-            "A website assistant that uses the school content and knowledge base to answer questions, summarize relevant pages, guide users to consultation, and log useful data.",
-          connects: ["Website", "Knowledge base / RAG", "Consultation form", "Analytics / KPI logs", "CRM-ready architecture"],
+            "Website / email lead is captured, enriched, added to CRM, assigned to sales, followed up automatically, and visible in a dashboard.",
+          connects: ["Forms", "Email", "CRM", "Notifications", "Dashboard"],
           result:
-            "Designed to reduce repeated manual answering and make consultation requests easier to capture.",
+            "Typical starting system for companies that want more control over incoming opportunities.",
         },
         {
           label: "real",
@@ -241,15 +279,26 @@ export const translations = {
             "Built to reduce manual product entry and make product creation faster and more consistent.",
         },
         {
-          label: "example",
-          title: "CRM + lead flow automation",
+          label: "pilot",
+          title: "Language school customer assistant",
           problem:
-            "Leads arrive from different channels and depend on manual follow-up.",
+            "Visitors need quick answers about study options and consultations, while the team needs better lead capture and insight into repeated questions.",
           system:
-            "Website / email lead is captured, enriched, added to CRM, assigned to sales, followed up, and shown in a dashboard.",
-          connects: ["Forms", "Email", "CRM", "Notifications", "Dashboard"],
+            "A website assistant that uses the school content and knowledge base to answer questions, guide users to consultation, and log useful data for the team.",
+          connects: ["Website", "Knowledge base", "Consultation form", "Analytics", "CRM-ready architecture"],
           result:
-            "Typical starting system for companies that want more control over incoming opportunities.",
+            "Designed to reduce repeated manual answering and make consultation requests easier to capture.",
+        },
+        {
+          label: "example",
+          title: "Supplier & procurement workflow",
+          problem:
+            "Supplier emails, quotes and order approvals sit in people's inboxes. Nobody has a central view of what was sent, answered or still pending.",
+          system:
+            "Incoming supplier emails are captured and logged. Quotes are compared in a shared view. Approval requests go through a simple workflow. Order status is tracked automatically.",
+          connects: ["Email", "Spreadsheets / ERP", "Approval workflow", "Status tracking", "Notifications"],
+          result:
+            "Designed to replace ad-hoc inbox management with a clear, shared process for supplier communication.",
         },
         {
           label: "real",
@@ -257,21 +306,10 @@ export const translations = {
           problem:
             "Teams need to track news sources, market signals and prices across the web, but reading and summarising it manually eats hours every day.",
           system:
-            "A scheduled job pulls from configured RSS, news sites and price feeds. AI classifies, summarises and extracts key information. A small forecasting model adds short-term signals. Briefs are pushed to Telegram / WhatsApp / email and stored in a searchable history.",
+            "A scheduled job pulls from configured RSS, news sites and price feeds. AI classifies, summarises and extracts key information. Briefs are pushed to Telegram / WhatsApp / email and stored in a searchable history.",
           connects: ["RSS / news sites", "Price & market feeds", "Telegram", "WhatsApp / Email", "Database"],
           result:
-            "Built to replace daily manual reading with a focused 5-minute brief, with full source links and replayable history.",
-        },
-        {
-          label: "pilot",
-          title: "Social content engine",
-          problem:
-            "Posting consistently on X / Threads / LinkedIn requires daily attention, trend-watching and creative effort that small teams cannot sustain.",
-          system:
-            "A pipeline scrapes trending topics, scores virality, drafts posts in your tone, schedules them, and learns from per-post performance to adapt the strategy.",
-          connects: ["X (Twitter)", "Threads", "LinkedIn", "Scheduler", "Analytics"],
-          result:
-            "Designed to keep a small brand active several times per week without daily creative work.",
+            "Built to replace daily manual reading with a focused 5-minute brief, with full source links and history.",
         },
         {
           label: "real",
@@ -279,10 +317,21 @@ export const translations = {
           problem:
             "EU importers must produce CBAM-ready CO₂ reports on demand, but the source data lives across the ERP, supplier docs and spreadsheets.",
           system:
-            "On-request job pulls product, supplier and shipment data from the client ERP, applies CBAM emissions methodology, generates the official report, and logs every transformation for auditability. Optional model predicts upcoming credit needs.",
+            "On-request job pulls product, supplier and shipment data from the client ERP, applies CBAM emissions methodology, generates the official report, and logs every transformation for auditability.",
           connects: ["Client ERP", "Supplier docs", "Internal CBAM database", "Regulator export format"],
           result:
             "Built so a regulated CBAM report can be re-generated on demand with full transparency and an audit trail.",
+        },
+        {
+          label: "pilot",
+          title: "Social content engine",
+          problem:
+            "Posting consistently on X / Threads / LinkedIn requires daily attention and creative effort that small teams cannot sustain.",
+          system:
+            "A pipeline scrapes trending topics, drafts posts in your tone, schedules them, and learns from per-post performance to adapt the strategy.",
+          connects: ["X (Twitter)", "Threads", "LinkedIn", "Scheduler", "Analytics"],
+          result:
+            "Designed to keep a small brand active several times per week without daily creative work.",
         },
       ],
     },
@@ -294,19 +343,19 @@ export const translations = {
           number: "01",
           title: "Analysis",
           body:
-            "We map your workflow, tools, bottlenecks and repetitive work. The goal is to find one process where automation creates real value.",
+            "We map your workflow, tools, bottlenecks and repetitive work. The goal is to find one process where the change creates real value.",
         },
         {
           number: "02",
           title: "System design",
           body:
-            "We define what should be automated, what should stay human, which tools are involved, and how success will be measured.",
+            "We define what to automate, what stays human, which tools are involved, and how success will be measured.",
         },
         {
           number: "03",
           title: "Implementation",
           body:
-            "We build, integrate, test and launch the system with clear communication and realistic milestones.",
+            "We build, connect, test and launch the system with clear communication and realistic milestones.",
         },
         {
           number: "04",
@@ -315,16 +364,16 @@ export const translations = {
             "We monitor real usage, fix issues, improve flows, and expand only where it makes business sense.",
         },
       ],
-      capabilitiesLabel: "Technologies we use",
+      capabilitiesLabel: "Tools we connect",
       capabilities: [
-        { group: "Automation", items: ["Make", "Zapier", "n8n"] },
-        { group: "AI", items: ["OpenAI", "Claude", "Gemini"] },
-        { group: "Integrations", items: ["APIs", "Webhooks", "Databases"] },
-        { group: "CRM & ERP", items: ["HubSpot", "Pipedrive", "Custom systems"] },
+        { group: "CRM & Sales", items: ["HubSpot", "Pipedrive", "Custom CRM"] },
+        { group: "Workspace", items: ["Google Workspace", "Microsoft 365", "Slack / Teams"] },
         { group: "E-commerce", items: ["Shoptet", "Product data", "Imports"] },
-        { group: "Communication", items: ["Email", "Forms", "Chat", "WhatsApp / SMS"] },
-        { group: "Analytics", items: ["Reports", "Dashboards", "KPIs"] },
-        { group: "Cloud", items: ["AWS", "Google Cloud", "Azure", "Oracle Cloud"] },
+        { group: "Automation", items: ["Make", "n8n", "Zapier"] },
+        { group: "AI", items: ["Claude", "OpenAI", "Gemini"] },
+        { group: "Communication", items: ["Email", "Forms", "WhatsApp / SMS", "Chat"] },
+        { group: "Analytics", items: ["Dashboards", "Reports", "KPIs"] },
+        { group: "Technical", items: ["APIs", "Databases", "Webhooks"] },
       ],
     },
     why: {
@@ -340,7 +389,7 @@ export const translations = {
         {
           title: "AI only where it helps",
           body:
-            "We use AI for classification, drafting, summarizing, extraction and assistance — not as a gimmick.",
+            "We use AI where it actually helps — drafting, summarizing, answering questions, sorting data. Not because it is trendy.",
         },
         {
           title: "Built around your tools",
@@ -348,7 +397,7 @@ export const translations = {
         },
         {
           title: "Reliable, not just a demo",
-          body: "We care about logs, alerts, documentation and support from day one.",
+          body: "We build things that actually work when you need them — not just during the presentation.",
         },
         {
           title: "Human control",
@@ -362,10 +411,10 @@ export const translations = {
       ],
     },
     cta: {
-      eyebrow: "Next step",
+      eyebrow: "Free process review",
       headline: "Start with one process",
       lead:
-        "You don't need to know what to automate. Show us where work is slow, repetitive or unclear — we'll map the process and suggest the simplest useful first step.",
+        "You don't need to know what to automate. Show us where work is slow, repetitive or unclear — we'll map it and suggest the simplest useful first step.",
       deliverablesLabel: "What you get",
       deliverables: [
         "Workflow map",
@@ -380,6 +429,7 @@ export const translations = {
         { id: "leads", label: "Lead follow-up", prefill: "Our incoming leads come from forms / email / chat and follow-ups are slow or inconsistent. We need a single place to capture and react to them." },
         { id: "products", label: "Product upload", prefill: "Adding products to our shop / catalogue takes too long, the data lives in different sources and people make mistakes copying it." },
         { id: "support", label: "Repeated support questions", prefill: "Our support team keeps answering the same questions; we'd like to automate the easy ones and triage the rest." },
+        { id: "suppliers", label: "Supplier / ordering", prefill: "Supplier emails, quotes and orders are scattered across inboxes and spreadsheets. We'd like a clearer view of what is pending and what has been agreed." },
         { id: "reporting", label: "Reporting / KPIs", prefill: "We don't have a clear view of what's actually happening in the business — we want automated reports and a simple dashboard." },
         { id: "approvals", label: "Approvals & admin", prefill: "Approvals, reminders, documents and admin tasks are scattered across people and tools and they slip through the cracks." },
         { id: "news", label: "News / market tracking", prefill: "We need to track news, prices or competitor signals across the web and turn them into a short daily brief." },
@@ -389,7 +439,7 @@ export const translations = {
       ],
       form: {
         title: "Let's talk about your process",
-        subtitle: "Analysis is free. Includes a 10% discount on the first implementation.",
+        subtitle: "Free process review. No commitment.",
         name: "Your name",
         email: "Email",
         company: "Company",
@@ -437,7 +487,7 @@ export const translations = {
       eyebrow: "Pro rostoucí firmy",
       headline: "Pomáháme rostoucím firmám dostat chaos pod kontrolu",
       subheadline:
-        "58 Systems pomáhá firmám zbavit se manuální práce, propojit nástroje a zavést pořádek v procesech obchodu, zákaznické péče a provozu — bez technologického žargonu a řešení, která přestanou fungovat za měsíc.",
+        "Ztracené poptávky, ruční tabulky, hromady e-mailů od zákazníků, chaos u dodavatelů, čísla, která nikdo nevidí — stavíme jednoduché systémy kolem procesů, které nejvíc bolí.",
       ctaPrimary: "Promluvme si o vašem procesu",
       ctaSecondary: "Naše systémy",
       diagramTitle: "Spojíme vaše roztříštěné nástroje do jednoho funkčního procesu.",
@@ -461,19 +511,24 @@ export const translations = {
       headline: "Čím víc firma roste, tím víc věcí vypadá mezi prsty",
       cards: [
         {
-          title: "Leady se ztrácejí",
+          title: "Ztracené poptávky a pomalé reakce",
           body:
-            "Poptávky chodí z formulářů, e-mailů, telefonů i WhatsAppu. Odpovědi jsou pomalé, follow-up se nehlídá a nikdo neví, jestli vůbec někdo zareagoval.",
+            "Poptávky chodí z formulářů, e-mailů, telefonů i WhatsAppu. Odpovědi jsou pomalé, follow-up se nehlídá a nikdo neví, jestli vůbec někdo zareagoval — nebo kdo.",
         },
         {
-          title: "Lidé tráví den přepisováním dat",
+          title: "Příliš mnoho ruční práce",
           body:
-            "Informace se ručně přepisují mezi nástroji, tabulky se aktualizují ručně a stejná zpráva se odesílá z pěti různých míst.",
+            "Tým přepisuje data mezi nástroji, ručně aktualizuje tabulky a odesílá stejnou zprávu z pěti různých míst. Administrativa žere den.",
         },
         {
           title: "Zákazníci čekají na odpovědi",
           body:
-            "Stejné dotazy chodí každý den. E-mailová vlákna se hromadí. Odpovědi přicházejí pozdě. Každý je zaneprázdněný, ale zákazníci čekají.",
+            "Stejné dotazy chodí každý den. E-maily se hromadí. Odpovědi přicházejí pozdě. Každý je zaneprázdněný, ale zákazníci čekají.",
+        },
+        {
+          title: "Chaos u dodavatelů a objednávek",
+          body:
+            "E-maily od dodavatelů, nabídky, objednávky a schvalování sedí v různých schránkách. Nikdo nemá přehled, co bylo odesláno, dohodnuto nebo stále čeká.",
         },
         {
           title: "Firma se řídí odhadem, ne daty",
@@ -504,7 +559,7 @@ export const translations = {
           tag: "03",
           title: "Spolehlivé od prvního dne",
           body:
-            "Stavíme s testováním, monitoringem a řádnou obsluhou chyb od začátku — aby systém fungoval, když ho potřebujete.",
+            "Stavíme věci, které skutečně fungují, když je potřebujete — nejen při ukázce, ale každý den po ní.",
         },
         {
           tag: "04",
@@ -512,6 +567,22 @@ export const translations = {
           body:
             "Automatizujeme práci, která reálně šetří čas, snižuje chyby nebo zrychluje odpověď zákazníkům.",
         },
+      ],
+    },
+    claude: {
+      eyebrow: "AI & Claude",
+      headline: "Chcete využít Claude nebo AI ve vaší firmě?",
+      lead:
+        "Claude sám o sobě je užitečný. Claude napojený na váš CRM, e-mail, dokumenty a stávající workflow je mnohem užitečnější. 58 Systems propojí AI nástroje s procesy, kde skutečně pomáhají — váš tým dostane lepší výstupy, aniž by spravoval další nástroj.",
+      note: "AI má asistovat vašemu týmu, ne tvořit další black box.",
+      useCasesLabel: "Kde AI pomáhá",
+      useCases: [
+        { title: "Návrhy odpovědí", body: "Z kontextu CRM, e-mailové historie nebo zákaznických dat." },
+        { title: "Shrnutí komunikace", body: "Dlouhá vlákna, poznámky z hovorů nebo tickety — zhutněné do podstaty." },
+        { title: "Vyhledávání v dokumentech", body: "Odpovědi napříč manuály, procesy, pravidly a znalostními bázemi." },
+        { title: "Příprava follow-upů", body: "Navrhované kroky na základě CRM historie a otevřených úkolů." },
+        { title: "Třídění příchozích požadavků", body: "Automatické směrování ticketů, leadů nebo e-mailů podle typu nebo priority." },
+        { title: "Extrakce dat z dokumentů", body: "Faktury, objednávky, formuláře, PDF — strukturovaně do vašich systémů." },
       ],
     },
     products: {
@@ -545,7 +616,7 @@ export const translations = {
           number: "02",
           title: "AI obchodní asistent",
           problem:
-            "Obchodníci tráví příliš mnoho času opakovanými odpověďmi, poznámkami, rešerší a připomínkami.",
+            "Obchodníci tráví příliš mnoho času opakovanými odpověďmi, poznámkami a připomínkami místo uzavírání obchodů.",
           gets: [
             "Návrhy úvodních odpovědí",
             "Drafty follow-upů",
@@ -556,7 +627,7 @@ export const translations = {
           ],
           connects: ["CRM", "E-mail", "Kalendář", "Web formuláře", "Interní dokumenty"],
           outcome:
-            "Obchod tráví víc času uzavíráním a míň administrativou. AI asistuje; rozhoduje člověk.",
+            "Obchod tráví víc času uzavíráním a míň administrativou. AI navrhuje a připravuje; rozhoduje člověk.",
         },
         {
           number: "03",
@@ -593,6 +664,23 @@ export const translations = {
         },
         {
           number: "05",
+          title: "Workflow nákupu a dodavatelů",
+          problem:
+            "E-maily od dodavatelů, nabídky, objednávky, schvalování a produktová data jsou roztroušené v e-mailech, tabulkách a mezi různými lidmi.",
+          gets: [
+            "Sledování e-mailů od dodavatelů",
+            "Sběr nabídek a poptávek",
+            "Sledování objednávek a stavů",
+            "Schvalovací workflow",
+            "Data o produktech a dodavatelích",
+            "Připomínky a follow-upy",
+            "Jednoduchý reporting",
+          ],
+          connects: ["E-mail", "Tabulky", "Portály dodavatelů", "ERP / sklad", "Slack / Teams", "CRM"],
+          outcome: "Přehlednější komunikace s dodavateli, méně promeškáných objednávek a méně ručního honičení.",
+        },
+        {
+          number: "06",
           title: "Automatizace interního provozu",
           problem:
             "Schvalování, připomínky, dokumenty a administrativa jsou roztroušené mezi lidmi a nástroji.",
@@ -608,8 +696,8 @@ export const translations = {
           outcome: "Méně zdržení, méně zapomenutých úkolů, jasnější odpovědnost.",
         },
         {
-          number: "06",
-          title: "Reporting a KPI dashboard",
+          number: "07",
+          title: "Reporting a přehled pro vedení",
           problem:
             "Data existují, ale majitelé a manažeři reálně nevidí, co se děje.",
           gets: [
@@ -628,7 +716,7 @@ export const translations = {
       eyebrow: "Ukázky práce",
       headline: "Příklady ze skutečných projektů",
       lead:
-        "Poctivé popisy systémů, které jsme navrhli a postavili. Každý vychází z reálného problému. Používáme jasné štítky a vyhýbáme se vymyšleným číslům.",
+        "Poctivé popisy systémů, které jsme navrhli a postavili. Každý vychází z reálného problému.",
       labels: {
         real: "Reálný projekt",
         pilot: "Pilot",
@@ -637,18 +725,18 @@ export const translations = {
       problemLabel: "Problém",
       systemLabel: "Systém",
       connectsLabel: "Co propojuje",
-      resultLabel: "Cílený výsledek",
+      resultLabel: "Výsledek",
       items: [
         {
-          label: "pilot",
-          title: "Chatbot pro jazykovou školu",
+          label: "example",
+          title: "CRM + tok leadů",
           problem:
-            "Návštěvníci potřebují rychlé odpovědi o studiu, článcích a konzultacích, tým chce lepší sběr leadů a přehled o opakovaných dotazech.",
+            "Leady přicházejí z různých kanálů a závisí na manuálním follow-upu. Věci propadají.",
           system:
-            "Webový asistent využívá obsah školy a znalostní bázi — odpovídá na otázky, shrnuje relevantní stránky, vede uživatele ke konzultaci a loguje užitečná data.",
-          connects: ["Web", "Znalostní báze / RAG", "Formulář konzultace", "Analytika / KPI logy", "Architektura připravená pro CRM"],
+            "Web/e-mail lead je sebrán, obohacen, vložen do CRM, přiřazen obchodu, automaticky zpracován a viditelný v dashboardu.",
+          connects: ["Formuláře", "E-mail", "CRM", "Notifikace", "Dashboard"],
           result:
-            "Cílem je snížit opakované manuální odpovídání a usnadnit sběr požadavků na konzultaci.",
+            "Typický startovní systém pro firmy, které chtějí mít víc kontroly nad přílivem příležitostí.",
         },
         {
           label: "real",
@@ -662,15 +750,26 @@ export const translations = {
             "Postaveno tak, aby snížilo manuální zadávání produktů a zrychlilo a zkonzistentnilo jejich tvorbu.",
         },
         {
-          label: "example",
-          title: "CRM + tok leadů",
+          label: "pilot",
+          title: "Zákaznický asistent pro jazykovou školu",
           problem:
-            "Leady přicházejí z různých kanálů a závisí na manuálním follow-upu.",
+            "Návštěvníci potřebují rychlé odpovědi o studiu a konzultacích, tým chce lepší sběr leadů a přehled o opakovaných dotazech.",
           system:
-            "Web/e-mail lead je sebrán, obohacen, vložen do CRM, přiřazen obchodu, dále zpracován a viditelný v dashboardu.",
-          connects: ["Formuláře", "E-mail", "CRM", "Notifikace", "Dashboard"],
+            "Webový asistent využívá obsah školy a znalostní bázi — odpovídá na otázky, vede uživatele ke konzultaci a loguje užitečná data pro tým.",
+          connects: ["Web", "Znalostní báze", "Formulář konzultace", "Analytika", "Architektura připravená pro CRM"],
           result:
-            "Typický startovní systém pro firmy, které chtějí mít víc kontroly nad přílivem příležitostí.",
+            "Cílem je snížit opakované manuální odpovídání a usnadnit sběr požadavků na konzultaci.",
+        },
+        {
+          label: "example",
+          title: "Workflow nákupu a dodavatelů",
+          problem:
+            "E-maily od dodavatelů, nabídky a schvalování objednávek se hromadí v různých schránkách. Nikdo nemá přehled, co bylo odesláno, zodpovězeno nebo stále čeká.",
+          system:
+            "Příchozí e-maily od dodavatelů se zachytí a zalogují. Nabídky se porovnají v přehledném pohledu. Žádosti o schválení projdou jednoduchým workflow. Stav objednávek se sleduje automaticky.",
+          connects: ["E-mail", "Tabulky / ERP", "Schvalovací workflow", "Sledování stavu", "Notifikace"],
+          result:
+            "Cílem je nahradit ad-hoc správu doručené pošty jasným, sdíleným procesem pro komunikaci s dodavateli.",
         },
         {
           label: "real",
@@ -678,21 +777,10 @@ export const translations = {
           problem:
             "Týmy musí sledovat zpravodajské zdroje, tržní signály a ceny napříč webem, ale ruční čtení a sumarizace zabírá hodiny denně.",
           system:
-            "Naplánovaná úloha stahuje data z RSS, zpravodajských webů a cenových zdrojů. AI klasifikuje, sumarizuje a extrahuje klíčové informace. Malý prediktivní model přidá krátkodobé signály. Souhrny chodí na Telegram / WhatsApp / e-mail a ukládají se do prohledávatelné historie.",
+            "Naplánovaná úloha stahuje data z RSS, zpravodajských webů a cenových zdrojů. AI klasifikuje, sumarizuje a extrahuje klíčové informace. Souhrny chodí na Telegram / WhatsApp / e-mail a ukládají se do prohledávatelné historie.",
           connects: ["RSS / zpravodajské weby", "Cenové a tržní feedy", "Telegram", "WhatsApp / E-mail", "Databáze"],
           result:
             "Postaveno tak, aby nahradilo denní ruční čtení 5minutovým souhrnem s odkazy na zdroje a historií.",
-        },
-        {
-          label: "pilot",
-          title: "Engine pro sociální obsah",
-          problem:
-            "Pravidelné publikování na X / Threads / LinkedIn vyžaduje denní pozornost, sledování trendů a kreativní práci, což si malé týmy nemůžou dovolit.",
-          system:
-            "Pipeline scrapuje trendující témata, skóruje virálnost, generuje drafty postů ve vašem tónu, plánuje publikaci a učí se z výkonu jednotlivých postů.",
-          connects: ["X (Twitter)", "Threads", "LinkedIn", "Plánovač", "Analytika"],
-          result:
-            "Cílem je udržet značku aktivní několikrát týdně bez denní kreativní práce.",
         },
         {
           label: "real",
@@ -700,10 +788,21 @@ export const translations = {
           problem:
             "EU dovozci musí na vyžádání produkovat CBAM-ready reporty CO₂, ale zdrojová data jsou roztroušená v ERP, dokladech od dodavatelů a tabulkách.",
           system:
-            "Úloha na vyžádání stáhne data o produktech, dodavatelích a zásilkách z ERP klienta, aplikuje CBAM metodiku emisí, vygeneruje oficiální report a uloží každou transformaci pro audit. Volitelný model předpovídá potřebu kreditů.",
+            "Úloha na vyžádání stáhne data z ERP klienta, aplikuje CBAM metodiku emisí, vygeneruje oficiální report a uloží každou transformaci pro audit.",
           connects: ["ERP klienta", "Dokumenty dodavatelů", "Interní CBAM databáze", "Exportní formát regulátora"],
           result:
             "Postaveno tak, aby regulační CBAM report šel kdykoliv znovu vygenerovat s plnou transparencí a audit trailem.",
+        },
+        {
+          label: "pilot",
+          title: "Engine pro sociální obsah",
+          problem:
+            "Pravidelné publikování na X / Threads / LinkedIn vyžaduje denní pozornost a kreativní práci, což si malé týmy nemůžou dovolit.",
+          system:
+            "Pipeline scrapuje trendující témata, generuje drafty postů ve vašem tónu, plánuje publikaci a učí se z výkonu jednotlivých postů.",
+          connects: ["X (Twitter)", "Threads", "LinkedIn", "Plánovač", "Analytika"],
+          result:
+            "Cílem je udržet značku aktivní několikrát týdně bez denní kreativní práce.",
         },
       ],
     },
@@ -715,7 +814,7 @@ export const translations = {
           number: "01",
           title: "Analýza",
           body:
-            "Zmapujeme váš workflow, nástroje, úzká místa a opakovanou práci. Cílem je najít proces, kde automatizace přinese reálnou hodnotu.",
+            "Zmapujeme váš workflow, nástroje, úzká místa a opakovanou práci. Cílem je najít proces, kde změna přinese reálnou hodnotu.",
         },
         {
           number: "02",
@@ -727,7 +826,7 @@ export const translations = {
           number: "03",
           title: "Implementace",
           body:
-            "Stavíme, integrujeme, testujeme a spouštíme systém. S jasnou komunikací a reálnými milníky.",
+            "Stavíme, propojujeme, testujeme a spouštíme. S jasnou komunikací a reálnými milníky.",
         },
         {
           number: "04",
@@ -736,16 +835,16 @@ export const translations = {
             "Sledujeme reálné používání, opravujeme problémy, vylepšujeme procesy a rozšiřujeme jen tam, kde to dává byznysový smysl.",
         },
       ],
-      capabilitiesLabel: "Technologie, které používáme",
+      capabilitiesLabel: "Nástroje, které propojujeme",
       capabilities: [
-        { group: "Automatizace", items: ["Make", "Zapier", "n8n"] },
-        { group: "AI", items: ["OpenAI", "Claude", "Gemini"] },
-        { group: "Integrace", items: ["API", "Webhooks", "Databáze"] },
-        { group: "CRM & ERP", items: ["HubSpot", "Pipedrive", "Custom systémy"] },
+        { group: "CRM & obchod", items: ["HubSpot", "Pipedrive", "Vlastní CRM"] },
+        { group: "Firemní nástroje", items: ["Google Workspace", "Microsoft 365", "Slack / Teams"] },
         { group: "E-commerce", items: ["Shoptet", "Produktová data", "Importy"] },
-        { group: "Komunikace", items: ["E-mail", "Formuláře", "Chat", "WhatsApp / SMS"] },
-        { group: "Analytika", items: ["Reporty", "Dashboardy", "KPI"] },
-        { group: "Cloud", items: ["AWS", "Google Cloud", "Azure", "Oracle Cloud"] },
+        { group: "Automatizace", items: ["Make", "n8n", "Zapier"] },
+        { group: "AI", items: ["Claude", "OpenAI", "Gemini"] },
+        { group: "Komunikace", items: ["E-mail", "Formuláře", "WhatsApp / SMS", "Chat"] },
+        { group: "Analytika", items: ["Dashboardy", "Reporty", "KPI"] },
+        { group: "Technické napojení", items: ["API", "Databáze", "Webhooks"] },
       ],
     },
     why: {
@@ -761,7 +860,7 @@ export const translations = {
         {
           title: "AI jen tam, kde pomáhá",
           body:
-            "AI používáme na klasifikaci, drafty, shrnutí, extrakci a asistenci — ne jako efekt.",
+            "AI používáme tam, kde skutečně pomáhá — návrhy, shrnutí, odpovídání na dotazy, třídění dat. Ne proto, že je to trendy.",
         },
         {
           title: "Kolem nástrojů, které už máte",
@@ -769,7 +868,7 @@ export const translations = {
         },
         {
           title: "Spolehlivé, ne jenom demo",
-          body: "Záleží nám na lozích, upozorněních, dokumentaci a podpoře od prvního dne.",
+          body: "Stavíme věci, které fungují, když je potřebujete — nejen při prezentaci.",
         },
         {
           title: "Kontrolu má člověk",
@@ -783,7 +882,7 @@ export const translations = {
       ],
     },
     cta: {
-      eyebrow: "Další krok",
+      eyebrow: "Bezplatná procesní konzultace",
       headline: "Začněte jedním procesem",
       lead:
         "Nemusíte vědět, co automatizovat. Ukažte nám, kde je práce pomalá, repetitivní nebo nepřehledná — zmapujeme to a navrhneme nejjednodušší první krok.",
@@ -801,6 +900,7 @@ export const translations = {
         { id: "leads", label: "Práce s leady", prefill: "Leady k nám chodí z formulářů / e-mailu / chatu a follow-up je pomalý nebo nekonzistentní. Chceme je sbírat a reagovat na ně z jednoho místa." },
         { id: "products", label: "Nahrávání produktů", prefill: "Přidávání produktů do našeho e-shopu / katalogu trvá moc dlouho, data jsou v různých zdrojích a lidé dělají chyby při přepisování." },
         { id: "support", label: "Opakované dotazy v podpoře", prefill: "Náš support pořád odpovídá na stejné věci. Rádi bychom ty jednoduché automatizovali a zbytek triagovali." },
+        { id: "suppliers", label: "Dodavatelé / objednávky", prefill: "E-maily od dodavatelů, nabídky a objednávky jsou roztroušené ve schránkách a tabulkách. Chceme mít přehled, co čeká a co je dohodnuté." },
         { id: "reporting", label: "Reporting / KPI", prefill: "Nemáme jasný přehled o tom, co se ve firmě reálně děje — chceme automatické reporty a jednoduchý dashboard." },
         { id: "approvals", label: "Schvalování a administrativa", prefill: "Schvalování, připomínky, dokumenty a administrativa jsou roztroušené mezi lidmi a nástroji a často nám utíkají." },
         { id: "news", label: "Sledování zpráv / trhu", prefill: "Potřebujeme sledovat zprávy, ceny nebo signály od konkurence napříč webem a převést je do krátkého denního souhrnu." },
@@ -810,7 +910,7 @@ export const translations = {
       ],
       form: {
         title: "Promluvme si o vašem procesu",
-        subtitle: "Analýza je zdarma. Zahrnuje 10% slevu na první implementaci.",
+        subtitle: "Bezplatná procesní konzultace. Bez závazku.",
         name: "Jméno",
         email: "E-mail",
         company: "Firma",

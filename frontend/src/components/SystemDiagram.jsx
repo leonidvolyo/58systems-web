@@ -166,8 +166,8 @@ const SystemDiagram = ({ inputItems, outputItems, centerLabel, title, subtitleLi
                 className="absolute pointer-events-auto"
                 style={{ top, left: "3%" }}
               >
-                <div className="flex items-center gap-2 bg-ink-soft/95 border border-white/[0.10] hover:border-orange/60 rounded-lg pl-2 pr-3.5 py-1.5 text-[12.5px] text-white/90 transition-colors shadow-[0_8px_30px_-18px_rgba(0,0,0,0.7)]">
-                  <span className="w-7 h-7 inline-flex items-center justify-center rounded-md bg-white/[0.04] text-orange">
+                <div className="flex items-center gap-2 bg-white border border-ink/[0.12] hover:border-orange/40 rounded-lg pl-2 pr-3.5 py-1.5 text-[12.5px] text-ink/85 transition-colors shadow-[0_4px_16px_-4px_rgba(0,0,0,0.08)]">
+                  <span className="w-7 h-7 inline-flex items-center justify-center rounded-md bg-orange/[0.08] text-orange">
                     <Icon size={15} />
                   </span>
                   <span className="font-medium">{item}</span>
@@ -184,8 +184,8 @@ const SystemDiagram = ({ inputItems, outputItems, centerLabel, title, subtitleLi
                 className="absolute pointer-events-auto"
                 style={{ top, right: "3%" }}
               >
-                <div className="flex items-center gap-2 bg-ink-soft/95 border border-white/[0.10] hover:border-orange/60 rounded-lg pl-2 pr-3.5 py-1.5 text-[12.5px] text-white/90 transition-colors shadow-[0_8px_30px_-18px_rgba(0,0,0,0.7)]">
-                  <span className="w-7 h-7 inline-flex items-center justify-center rounded-md bg-white/[0.04] text-orange">
+                <div className="flex items-center gap-2 bg-white border border-ink/[0.12] hover:border-orange/40 rounded-lg pl-2 pr-3.5 py-1.5 text-[12.5px] text-ink/85 transition-colors shadow-[0_4px_16px_-4px_rgba(0,0,0,0.08)]">
+                  <span className="w-7 h-7 inline-flex items-center justify-center rounded-md bg-orange/[0.08] text-orange">
                     <Icon size={15} />
                   </span>
                   <span className="font-medium">{item}</span>
