@@ -9,6 +9,7 @@ import ProductSystems from "./components/ProductSystems";
 import SystemStories from "./components/SystemStories";
 import Process from "./components/Process";
 import Why58Systems from "./components/Why58Systems";
+import ClaudeAI from "./components/ClaudeAI";
 import ProcessAnalysisCTA from "./components/ProcessAnalysisCTA";
 import Footer from "./components/Footer";
 
@@ -23,6 +24,7 @@ const Home = () => (
       <SystemStories />
       <Process />
       <Why58Systems />
+      <ClaudeAI />
       <ProcessAnalysisCTA />
     </main>
     <Footer />

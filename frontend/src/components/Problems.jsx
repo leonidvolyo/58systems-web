@@ -18,19 +18,14 @@ const Problems = () => {
               {t.problems.headline}
             </h2>
           </div>
-          <div className="lg:col-span-6 lg:col-start-7 self-end">
-            <p className="text-white/60 text-[16px] leading-relaxed">
-              {t.problems.headline.endsWith("?") ? "" : ""}
-            </p>
-          </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-px bg-ink/[0.06] border border-ink/[0.07] rounded-xl overflow-hidden">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
           {t.problems.cards.map((card, i) => (
             <div
               key={card.title}
               data-testid={`problem-card-${i + 1}`}
-              className="bg-paper p-7 lg:p-9 hover:bg-paper-dim transition-colors duration-200"
+              className="bg-white border border-ink/[0.07] rounded-xl p-7 hover:border-orange/30 transition-colors duration-200 card-lift"
             >
               <div className="flex items-start gap-5">
                 <span className="font-mono text-[12px] text-orange mt-1 tracking-widest">
